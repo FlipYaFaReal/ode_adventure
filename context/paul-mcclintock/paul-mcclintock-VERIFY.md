@@ -11,8 +11,8 @@ Four provenance levels are used throughout:
 
 # ⚠️ Parked items
 
-Four items were parked on 2026-08-22 and moved to `paul-mcclintock-DEFERRED.md`: **Kip**, a **security
-risk assessment**, a **contract evaluation project**, and a **POC built with Fable.**
+Four items were parked on 2026-08-22 and moved to `paul-mcclintock-DEFERRED.md`: **Kip**, a **security risk
+assessment**, a **contract evaluation project**, and a **POC built with Fable.**
 
 The security item is **withheld from this public repository** pending a confidentiality decision. It is
 client- and employer-confidential and is held locally only.
@@ -55,7 +55,7 @@ I wrote "building was more rewarding than launching." TradeParrot's first commit
 | 5 | **CaptureRapture's pre-git history.** First commit reads `initial: existing CaptureRapture codebase`. How much predates Mar 26, and did you build that part? The 8,709-line count includes it. | applications/04 |
 | 6 | **Job Hunt OS internals.** Everything comes from the SYSTEM README. The live repo (`FlipYaFaReal/jobhunt`) wasn't read — operating spec, ledger, trends, and any conversion numbers are unverified. **Is it still in TEST mode?** | systems/02 |
 | 7 | **Gmail Cleanup was actually run** against your live account. `cleanup.log` exists, which suggests yes. | applications/07 |
-| 8 | **Repo privacy.** Several linked project repos are under the `FlipYaFaReal` account. If the site links them, confirm each is intended to be public and has been checked for committed credentials before publishing the link. | README, JSON |
+| 8 | **Repo privacy.** Several linked project repos sit under the `FlipYaFaReal` account. Before the site links any of them, confirm each is intended to be public and has been checked for committed credentials. | README, JSON |
 
 ## Everything from the chat-history source
 

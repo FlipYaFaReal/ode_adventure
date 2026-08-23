@@ -20,7 +20,7 @@ Product and delivery leader with 15+ years spanning the full arc of the work —
 
 **Agentic automation** — designed and operate a multi-agent job-search pipeline: scheduled Claude agents that scan, score, and verify opportunities daily, generate tailored materials, and stage attended browser submission. *This application was assembled inside it.*
 
-**Building with Claude Code** — 6+ working applications, including CareerCalling, a Next.js/Prisma/TypeScript app using the Claude API for five-dimension job-fit scoring, tailored document generation, and pipeline analytics.
+**Building with Claude Code** — 8 working applications across C#, TypeScript, and Python, built through a multi-role agent workflow: PM, architect, engineer, code review, security review, QA. Most recent: SoccerRatings, a youth-league evaluation PWA taken from design document to tested, secured, accessible production in two days.
 
 **Personal AI stack** — self-hosted home LLM inference servers; daily driver of OpenClaw, an open-source personal AI agent, for personal workflow automation.
 
@@ -104,7 +104,8 @@ Three claims here are documented in more depth alongside this file:
 | "self-hosted home LLM inference servers" | `case-studies/systems/04-06-reported-systems.md` §5 |
 | "daily driver of OpenClaw" | Kip — parked in `paul-mcclintock-DEFERRED.md`, not yet written up |
 
-Two figures differ slightly from the portfolio and are worth reconciling before the next revision of this CV:
+### Revision history
 
-- **"6+ working applications"** — the portfolio documents **eight**, plus six systems. The CV understates.
-- **CareerCalling is cited as the flagship Claude Code build.** The portfolio establishes it as generation two of three, parked and superseded by Job Hunt OS. SoccerRatings (spec to shipped, tested and secured, in two days) and the multi-agent development workflow are both stronger examples.
+**2026-08-23** — the "Hands-on AI practice" section was corrected against the portfolio. The application-count figure read "6+" where eight are documented, and CareerCalling was cited as the flagship Claude Code build when the portfolio establishes it as generation two of three, parked and superseded by Job Hunt OS. It now cites the multi-role agent workflow and SoccerRatings, both of which hold up to inspection.
+
+The version submitted to Ode on 2026-08-19 carried the original wording and is archived unmodified alongside this file.
