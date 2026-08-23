@@ -1,0 +1,1236 @@
+{
+  "meta": {
+    "owner": "Paul McClintock",
+    "generated": "2026-08-22",
+    "purpose": "Source material for a personal portfolio web experience about building software with Claude Code. Audience: hiring manager, Forward Deployed Product Manager @ Ode with Anthropic.",
+    "generated_by": "Claude Code, from git history and in-repo design documents on the author's machine",
+    "provenance_legend": {
+      "verified": "Mined directly from git history or file contents. Trustworthy without review.",
+      "quoted": "Lifted verbatim or near-verbatim from a document the author wrote. Trustworthy.",
+      "drafted": "Written by Claude as analysis or inference. MUST be reviewed by the author before use in an interview or on a public site. See VERIFY.md.",
+      "reported": "Supplied by the author from reconstructed chat history. Not checkable against files on this machine. Plausible and specific, but treat as the author's recollection rather than as record."
+    },
+    "headline_stats": {
+      "applications": 8,
+      "commits": 422,
+      "lines_of_code": 86036,
+      "spec_and_plan_documents": 88,
+      "active_working_days": 36,
+      "calendar_span": "2026-02-18 to 2026-08-22",
+      "languages": [
+        "C#",
+        "TypeScript",
+        "Python",
+        "SQL"
+      ],
+      "provenance": "verified",
+      "note": "Excludes the four parked items in `deferred` and all non-code work in `also_built`.",
+      "systems": 6,
+      "loc_note": "Revised from 81,707. HouseHelper's contribution was corrected from 103 committed lines to 4,432 hand-written lines that exist on disk but were never committed."
+    },
+    "sources": {
+      "primary": "Git history and in-repo documents on this machine, read 2026-08-22. Covers all of tier one, plus Operation Teleport, the Job Hunt OS system README, and the on-disk evidence for the multi-agent workflow.",
+      "secondary": "ai-journey-portfolio-source_1.md, supplied by the author 2026-08-22, reconstructed from chat history Feb-Aug 2026. Sole source for the local inference stack, the vendor-risk automation, the security policy work, the team infrastructure evaluation, and the diagnostic story. Marked provenance 'reported'."
+    },
+    "published_to": "github.com/FlipYaFaReal/ode_adventure (public) as context/paul-mcclintock/",
+    "redaction_note": "This is the public copy. One deferred item (security risk assessment) is withheld, and section 3 of the source document is redacted. The unredacted working copy is held locally."
+  },
+  "narrative": {
+    "throughline": {
+      "text": "Two arcs run through this, and they are different claims. The first is about scope: over seven months the work moved from using AI tools, to building with agentic workflows, to architecting AI systems for other people, with governance judgment attached. The second is about craft: over the same period the individual builds got smaller, faster, and more finished, as February's ListingLift ran forty-six days past its own PRD and never launched while July's SoccerRatings shipped in two days with its non-goals intact. Neither arc is the whole story on its own. The scope arc without the craft arc is a tourist; the craft arc without the scope arc is a hobbyist.",
+      "provenance": "drafted"
+    },
+    "themes": [
+      {
+        "id": "rubric-design",
+        "title": "He writes evaluation criteria for AI judgment in every domain he touches",
+        "text": "Trade quality graded A through F with entry, stop, and three targets. Job fit scored 0-100 across five dimensions, then revised into rubric v2 with explicit weights and a bonus that is deliberately never a gate. Furniture graded on style, quality, and price with a verdict on whether a claimed brand is credible. Thirteen soccer categories, 1-5, with per-category anchor text describing what each score looks like. AI photo critique feeding a second enhancement pass. This is the same skill five times in five unrelated domains, and it is precisely what the role description means by converting ambiguous requirements into evaluation criteria for AI systems.",
+        "provenance": "verified"
+      },
+      {
+        "id": "gates-before-irreversible-actions",
+        "title": "Irreversible actions get a gate, unprompted",
+        "text": "Gmail Cleanup rewrites a personal inbox and ships dry-run first, confirmation-gated, fully logged. Job Hunt OS can email employers and ships with MODE: TEST, with LIVE requiring a deliberate committed change. The multi-agent workflow enforces a security review stage and caps review cycles so the loop cannot run away. Nobody required any of it.",
+        "provenance": "verified"
+      },
+      {
+        "id": "specs-as-unit-of-work",
+        "title": "The spec is the unit of work, not the commit",
+        "text": "Every project carries a dated design document, then an implementation plan, then the commits that satisfy it. 88 such documents across eight projects. This is the same artifact chain the Ode role describes as translating ambiguous requirements into clear PRDs and evaluation criteria.",
+        "provenance": "verified"
+      },
+      {
+        "id": "discipline-lagged-ambition",
+        "title": "The discipline arrived later than the ambition",
+        "text": "The earliest and largest project has the loosest relationship between its PRD and its code. The latest and smallest has TDD, row-level-security access-matrix tests, Playwright end-to-end coverage, and a pass of accessibility fixes. The rigor was learned in public, in order.",
+        "provenance": "drafted"
+      },
+      {
+        "id": "stopping-is-the-rare-skill",
+        "title": "Knowing when to stop is the rarest thing on display",
+        "text": "Gmail Cleanup and HouseHelper both stopped at the right moment and are the better for it. ListingLift and TradeParrot both kept going well past the point of diminishing returns. Both patterns are in the record, and the contrast is the most honest thing in this portfolio.",
+        "provenance": "drafted"
+      },
+      {
+        "id": "best-idea-least-time",
+        "title": "The strongest market opportunity got the least attention",
+        "text": "CaptureRapture sits in a real, funded category (Scribe, Tango, iorad) with a genuine enterprise differentiator, and received a single day of work. ListingLift sits in a crowded one and received fifteen.",
+        "provenance": "drafted"
+      },
+      {
+        "id": "diagnosis-before-construction",
+        "title": "Diagnosis before construction",
+        "text": "The vendor-risk build starts by rejecting the default retrieval mechanism as structurally wrong for the task. The engine diagnosis reads a compression pattern rather than swapping parts. The security policy gets a gap analysis before it gets sent. Same move, three domains: refuse to build until the problem is framed correctly.",
+        "provenance": "reported"
+      }
+    ],
+    "arc": [
+      {
+        "date": "2026-02-18",
+        "item": "listinglift",
+        "tier": "applications",
+        "beat": "An agent team scaffolds a working MVP in a day. Git gets added two days later, as an audit finding."
+      },
+      {
+        "date": "2026-03",
+        "item": "multi-agent-workflow",
+        "tier": "systems",
+        "beat": "The ad-hoc agent team becomes a written system: three phases, seven roles, decision records, quality gates."
+      },
+      {
+        "date": "2026-03-08",
+        "item": "careercalling",
+        "tier": "applications",
+        "beat": "Generation two of the job-search problem. The app form loses."
+      },
+      {
+        "date": "2026-03-09",
+        "item": "househelper",
+        "tier": "applications",
+        "beat": "Nine of ten tasks done, build passing, never run, never committed."
+      },
+      {
+        "date": "2026-03-26",
+        "item": "capturerapture",
+        "tier": "applications",
+        "beat": "One day. The best commercial idea of the eight."
+      },
+      {
+        "date": "2026-04-03",
+        "item": "tradeparrot",
+        "tier": "applications",
+        "beat": "A scanner that quietly becomes an autonomous trading agent."
+      },
+      {
+        "date": "2026-04-06",
+        "item": "geminivibes",
+        "tier": "applications",
+        "beat": "Two days, mostly spent fighting the toolchain."
+      },
+      {
+        "date": "2026-04-17",
+        "item": "operation-teleport",
+        "tier": "systems",
+        "beat": "The method leaves software entirely and runs a household relocation."
+      },
+      {
+        "date": "2026-05",
+        "item": "vra-automation",
+        "tier": "systems",
+        "beat": "A personal script becomes an installable team capability."
+      },
+      {
+        "date": "2026-05",
+        "item": "team-ai-infra",
+        "tier": "systems",
+        "beat": "Does the integration work, then argues against his own home lab."
+      },
+      {
+        "date": "2026-05-31",
+        "item": "gmail-cleanup",
+        "tier": "applications",
+        "beat": "One job, done, dry-run gated. Stops."
+      },
+      {
+        "date": "2026-06",
+        "item": "isp-from-zero",
+        "tier": "judgment",
+        "beat": "Writes the policy, then gap-analyses it against the existing one before sending."
+      },
+      {
+        "date": "2026-07-25",
+        "item": "soccerratings",
+        "tier": "applications",
+        "beat": "Spec to shipped PWA in two days. Everything learned, applied."
+      },
+      {
+        "date": "2026-07-27",
+        "item": "jobhunt-os",
+        "tier": "systems",
+        "beat": "Generation three goes live: autonomous, audited by git, gated in TEST mode."
+      }
+    ]
+  },
+  "also_built": {
+    "note": "Non-code work done with Claude in the same period. Evidence of breadth of use beyond software. Not case-studied.",
+    "provenance": "verified",
+    "items": [
+      {
+        "name": "OperationTeleport",
+        "what": "A household relocation command centre: inventory and marketplace-listing tracking as CSV plus generated HTML dashboards, a wall calendar, a PDF plan, and its own .claude/skills directory. The only project with custom Claude skills defined."
+      },
+      {
+        "name": "Job Hunt OS",
+        "what": "A documented system with a SYSTEM README, dated job-search assessments, daily Best-Fit Opportunity spreadsheets from February through May, Top-5 opportunity briefs, and tailored CV and cover-letter pairs for roughly twenty employers."
+      },
+      {
+        "name": "SecurityQuestions",
+        "what": "A business continuity and disaster recovery plan plus a vendor-risk questionnaire response."
+      },
+      {
+        "name": "Interior Design",
+        "what": "A generated family-room design plan as a standalone HTML document."
+      },
+      {
+        "name": "Beach House",
+        "what": "Comparison spreadsheets for property shortlisting."
+      },
+      {
+        "name": "MP3TestLibrary",
+        "what": "A Python library-fetching utility with a CSV manifest."
+      }
+    ]
+  },
+  "web_experience_hooks": {
+    "note": "Suggestions for the session building the site. Grounded in data present in this file; nothing here requires inventing facts.",
+    "provenance": "drafted",
+    "ideas": [
+      {
+        "id": "the-org-chart",
+        "title": "The Org Chart That Isn't Real",
+        "concept": "Render the simulated product organization from the multi-agent workflow - PM, Lead Engineer, UX Designer, QA Lead, Architect, Code Reviewer, Security Reviewer - then let the visitor open an actual decision record it produced. CaptureRapture's DEC-001, three options weighed for MVP scope, participants listed by role, video deferred to v2. The reveal is that none of those participants are people.",
+        "why_it_lands": "It is the single most Ode-relevant artifact, it is verifiable on disk, and it is genuinely surprising. Lead with it."
+      },
+      {
+        "id": "rubrics",
+        "title": "Five Rubrics",
+        "concept": "Put the five scoring systems side by side: trade grades, job fit weights (v1 against v2, so the revision is visible), furniture style/quality/price, the thirteen soccer categories with anchor text, and photo critique. One person, five domains, same instinct.",
+        "why_it_lands": "It is the tightest possible mapping to the JD's phrase about evaluation criteria for AI systems, and no other candidate will have it."
+      },
+      {
+        "id": "spec-to-ship",
+        "title": "Spec to Ship",
+        "concept": "For a chosen project, show the dated design document, then the implementation plan, then the commits that satisfied it, on one timeline. ListingLift and SoccerRatings are the two best subjects because they are opposite outcomes of the same method.",
+        "why_it_lands": "It shows the method rather than describing it, and the method is the actual differentiator."
+      },
+      {
+        "id": "the-drift",
+        "title": "The Drift",
+        "concept": "Side-by-side: what the ListingLift PRD specified in February (Firebase, Vertex AI, $1.99 per photo, a magic button) against what actually shipped by April (ASP.NET Core 8, PostgreSQL, Clerk, Stripe subscriptions, floorplan-driven room staging, collaborator share links). Let the reader watch the scope grow.",
+        "why_it_lands": "Self-aware, specific, and memorable. Most portfolios hide this; showing it deliberately reads as senior."
+      },
+      {
+        "id": "two-days",
+        "title": "Two Days",
+        "concept": "The SoccerRatings commit log for 25 July, all 56 commits, as a single dense visualization from schema through RLS policies, TDD scoring library, magic-link auth, CSV import wizard, committee report, Playwright E2E, and the accessibility pass.",
+        "why_it_lands": "It is the single most impressive verifiable fact in the portfolio and it needs no embellishment."
+      },
+      {
+        "id": "why-it-stopped",
+        "title": "Why It Stopped",
+        "concept": "Each project ends for a different reason. Make the ending the content: launched, superseded, outgrown its spec, ate its own toolchain, changed category, finished, or deliberately not built. One honest sentence per project.",
+        "why_it_lands": "Eight projects and one launched product is a weak claim. Eight projects and eight understood endings is a strong one."
+      },
+      {
+        "id": "range-map",
+        "title": "Range",
+        "concept": "Four languages, eight domains, in 36 working days. Real estate, trading, youth sports, enterprise L&D, career tooling, personal assistants, email, house hunting.",
+        "why_it_lands": "Directly evidences the forward-deployed requirement to land in an unfamiliar domain and be useful quickly."
+      },
+      {
+        "id": "the-gate",
+        "title": "The Gate",
+        "concept": "Two screens. Gmail Cleanup's dry-run phase before it rewrites an inbox. Job Hunt OS's MODE: TEST before it emails an employer. Same instinct, five months apart, neither one required by anyone.",
+        "why_it_lands": "Quiet, specific, and the thing a services client actually needs. It reads as trustworthiness rather than as a claim of trustworthiness."
+      }
+    ]
+  },
+  "tiers": {
+    "applications": {
+      "definition": "Software with a repository and running code. Metrics are git-verifiable.",
+      "count": 8,
+      "items": [
+        {
+          "id": "listinglift",
+          "name": "ListingLift",
+          "order": 1,
+          "tagline": "AI photo enhancement for real estate listings that grew into a B2B platform",
+          "status": "built, never launched",
+          "first_commit": "2026-02-20",
+          "last_commit": "2026-04-06",
+          "active_days": 15,
+          "calendar_days": 46,
+          "domain": "Real estate / prop-tech",
+          "repo": "https://github.com/FlipYaFaReal/ListingLift",
+          "problem_statement": {
+            "text": "Agents shooting listings on their phones need to post a Coming Soon teaser immediately and cannot wait 12-24 hours for a manual editor. Existing tools like Lightroom and Photoshop are too complex to use on a phone screen at the curb.",
+            "provenance": "quoted",
+            "source": "ListingLift_PRD.md, v1.0, 2026-02-18"
+          },
+          "intended_users": {
+            "text": "Two personas were named in the PRD: 'Speedy Sarah', an agent standing in front of a just-listed house who needs a blue sky right now for Instagram Stories, and 'Volume Vince', a property manager with 200 iPhone photos of empty rental units to brighten in bulk.",
+            "provenance": "quoted"
+          },
+          "success_criteria": {
+            "text": "Upload to result in under 30 seconds. Watermarked preview, paid high-res download. $1.99 single, $14.99 ten-pack, $29/mo subscription.",
+            "provenance": "quoted",
+            "source": "PRD section 3 and docs/plans/2026-04-06-production-launch-roadmap.md"
+          },
+          "features_built": [
+            "AI enhancement pipeline via Replicate with async predictions and webhooks",
+            "Before/after comparison slider (the PRD called this 'the magic moment')",
+            "Watermarked preview with paid high-resolution unlock",
+            "Stripe subscriptions, credit packs, and per-photo purchases",
+            "Clerk authentication with RS256 JWT and JWKS auto-discovery",
+            "Floorplan upload, analysis, and automatic room classification",
+            "Room-level virtual staging that anchors furniture to room features rather than camera position",
+            "AI photo critique, with enhancement driven by the critique feedback",
+            "Listing collaboration: share links, join flow, collaborator access to unlocked photos",
+            "Tabbed listing workflow reorganized around workflow phases"
+          ],
+          "market_assessment": {
+            "opportunity": "Real and proven. Virtual staging and listing-photo enhancement is an established paid category with incumbents including BoxBrownie, Styldod, and VirtualStagingAI. Agents already pay per photo.",
+            "differentiator_attempted": "Floorplan-driven room staging. Uploading a floorplan, auto-classifying which photo is which room, and staging with spatial context is genuinely more sophisticated than per-image filters. That was a real wedge.",
+            "why_it_was_hard": "The category is crowded and price-anchored low. Winning needs distribution into agent workflows (MLS, brokerage deals), not better output. Nothing in the repo addresses distribution.",
+            "verdict": "Good market, credible wedge, no distribution plan. The build outran the go-to-market by a wide margin.",
+            "provenance": "drafted"
+          },
+          "what_went_sideways": {
+            "text": "The PRD stopped being the contract. The February 18 PRD specifies a mobile-first React app on Firebase and Vertex AI, doing single-photo enhancement for $1.99, explicitly framed as a utility rather than a service. What actually got built is an ASP.NET Core 8 API on PostgreSQL with Entity Framework, Clerk, Stripe subscriptions, Cloudinary, Replicate, listing-scoped multi-photo workflows, floorplan analysis, and multi-user collaboration. Every one of those additions is defensible on its own. Together they turned a weekend utility into a B2B SaaS platform that needed a launch it never got. Infrastructure churned too: a Railway deployment plan on March 4, replaced by Azure App Service and Static Web Apps on April 2, plus a .NET 8 to .NET 10 upgrade mid-flight. The final commits on April 6 are a landing-page redesign and an approved five-phase production launch roadmap covering live Stripe keys, transactional email, and hardening. The roadmap was written and approved. It was never executed.",
+            "provenance": "drafted"
+          },
+          "lesson": {
+            "text": "Building was more rewarding than launching, and nothing in the process forced the question. A PRD that is never re-litigated stops being a constraint and becomes a souvenir.",
+            "provenance": "drafted"
+          },
+          "notable_rigor": {
+            "text": "A written security review dated 2026-02-18 covering the backend API found a HIGH severity issue in its own code: Replicate webhook signature verification was optional rather than required, allowing an unauthenticated attacker who found the webhook URL to mark any enhancement job complete with an attacker-controlled image URL. The review documents the risk and the remediation. Ownership checks (BOLA) were enforced by joining through the user record rather than trusting client-supplied identifiers, and file uploads were validated by size, extension, content-type, and magic bytes. Separately, the 2026-02-20 production-readiness design is a self-audit that found fourteen issues before first deploy, including unhandled Stripe invoice.payment_failed webhooks leaving lapsed subscribers with indefinite access, past_due and unpaid subscription states silently ignored, a dead AUTO_MIGRATE flag, and HSTS never being sent because ForwardedHeaders middleware was missing behind the TLS proxy.",
+            "provenance": "quoted",
+            "source": "SECURITY_REVIEW.md"
+          },
+          "stack": {
+            "backend": "ASP.NET Core 8 Minimal API (C#), later .NET 10",
+            "frontend": "React 18, Vite 5, TypeScript, TailwindCSS, TanStack Query",
+            "data": "PostgreSQL 16, Entity Framework Core 8, Npgsql",
+            "services": [
+              "Clerk",
+              "Stripe",
+              "Replicate",
+              "Cloudinary",
+              "Serilog"
+            ],
+            "infra": [
+              "Docker Compose",
+              "GitHub Actions",
+              "Azure App Service",
+              "Azure Static Web Apps"
+            ]
+          },
+          "metrics": {
+            "commits": 172,
+            "loc": 26396,
+            "tracked_files": 252,
+            "spec_docs": 30,
+            "test_files": 42,
+            "peak_commits_in_a_day": 33,
+            "provenance": "verified",
+            "note": "Commits and active days count only from git init on 2026-02-20. The Core Platform phase predates the repository."
+          },
+          "claude_practice": {
+            "text": "Fourteen paired design-and-plan documents in docs/plans, each dated and scoped to one feature: production readiness, smart features, realtime notifications, Railway deployment, virtual staging styles, frontend redesign, floorplan room staging, listing collaboration, tabbed UI. A CLAUDE.md carries project conventions. Feature branches per initiative, including a git worktree for SignalR notifications.",
+            "provenance": "verified"
+          },
+          "predates_git": {
+            "text": "The repository is not the beginning. The workflow state file records the project starting 2026-02-18 with the Core Platform phase, Clerk auth, listings and photos CRUD, Stripe payments, and an admin dashboard, completed 2026-02-19. Git was initialized on 2026-02-20, and it was initialized because the production-readiness audit listed it as blocker number six: 'No git repo exists. Can't version, deploy, or roll back.' So the MVP was scaffolded by an orchestrated agent team in roughly one day, and version control was added afterwards, as a finding.",
+            "provenance": "verified"
+          }
+        },
+        {
+          "id": "tradeparrot",
+          "name": "TradeParrot",
+          "order": 2,
+          "tagline": "A momentum scanner that graded trades with Claude, then started placing them",
+          "status": "working, in personal use, stopped abruptly",
+          "first_commit": "2026-04-03",
+          "last_commit": "2026-04-24",
+          "active_days": 13,
+          "calendar_days": 22,
+          "domain": "Fintech / personal trading tooling",
+          "repo": "https://github.com/FlipYaFaReal/TradeParrot",
+          "problem_statement": {
+            "text": "A day trader needs an automated dashboard that surfaces momentum trade opportunities during market hours (7am-12pm ET), enriched with AI analysis, options flow, short interest, and technical levels.",
+            "provenance": "quoted",
+            "source": "docs/plans/2026-04-01-tradeparrot-design.md"
+          },
+          "intended_users": {
+            "text": "One user: the author. This was never scoped as a product for others.",
+            "provenance": "drafted"
+          },
+          "success_criteria": {
+            "text": "Explicit constraints in the design doc: bullish plays only, no API requests outside 7am-12pm ET, 5-minute refresh cycle, free or low-cost data sources preferred, top 10 candidates per scan to manage cost and scan time.",
+            "provenance": "quoted"
+          },
+          "features_built": [
+            "Pre-market scanner (7:00-9:30 ET) for gap-ups, news catalysts, and volume surges",
+            "Momentum scanner (9:30-12:00 ET) for price and volume breakouts on high relative volume",
+            "Claude-graded trade quality, A through F, per candidate",
+            "Enrichment pipeline: support/resistance, VWAP, RSI, SMA, ATR, options put/call ratio, unusual options activity, float and short interest, squeeze potential",
+            "Specific entry price, stop loss, and three profit targets per trade",
+            "Political trading scanner: congressional STOCK Act disclosures via Quiver Quantitative plus Haiku-classified political news catalysts, against a curated ~20-member watchlist",
+            "Institutional positioning analysis: max pain, open-interest walls, point of control, anchored VWAP",
+            "Paper trading, then live auto-execution through Alpaca with dedup, staged exits, and noise-floor stops",
+            "Analytics split into paper-trade performance and signal quality, with click-through drill-down drawers on every chart"
+          ],
+          "market_assessment": {
+            "opportunity": "As a product, near zero, and correctly so. Publishing graded trade recommendations to other people is investment advice, which carries licensing and liability exposure that a solo side project cannot absorb. The value here is entirely personal and entirely technical.",
+            "why_it_still_matters": "It is the most technically ambitious system of the eight: scheduled scanners, multi-source enrichment, LLM grading in the loop, a websocket market-data feed with exponential-backoff retry, and an execution path that places real orders. As an engineering artifact it is the strongest evidence of range.",
+            "verdict": "Not a business, and never pretended to be. Judge it as a systems build, not a venture.",
+            "provenance": "drafted"
+          },
+          "what_went_sideways": {
+            "text": "It changed category without ever changing its design document. The April 1 design describes decision support: scan, enrich, grade, display, human decides. By April 21 it is sizing positions aggressively and tracking realized profit and loss by day. By April 22 it is hardening automatic trade execution. The final commit, on April 24, is 'default auto-exec ON and wrap settings restore in try/except'. A dashboard that recommends trades and a system that places them without asking are different products with different risk profiles, and the transition happened one reasonable commit at a time. Then it stops dead on April 24 with no wind-down commit, no README update, and no retrospective.",
+            "provenance": "drafted"
+          },
+          "lesson": {
+            "text": "The most important scope change in the project was never written down, because it did not arrive as a feature request. It accumulated. A design doc that is only ever appended to will not catch the moment a tool crosses into a different category of risk.",
+            "provenance": "drafted"
+          },
+          "notable_rigor": {
+            "text": "Twenty design and plan documents across 22 calendar days, including a dedicated test-coverage design and plan. Late-stage commits show real defensive engineering: escaping user-influenced fields in client-side JavaScript, null-safe price formatting, destroying stale chart handles, removing inline onchange handlers in favour of addEventListener, and analytics data-integrity work covering dedup, unified win-rate definition, and small-sample guards.",
+            "provenance": "verified"
+          },
+          "stack": {
+            "backend": "Python 3.11, FastAPI, APScheduler with timezone-aware gating",
+            "frontend": "Server-rendered HTML/CSS/JS, Chart.js, dark theme",
+            "data_sources": [
+              "yfinance",
+              "Finnhub",
+              "Quiver Quantitative",
+              "Alpaca",
+              "Schwab market data"
+            ],
+            "ai": "Claude (Sonnet for analysis, Haiku for news classification)",
+            "infra": [
+              "Docker"
+            ]
+          },
+          "metrics": {
+            "commits": 132,
+            "loc": 25056,
+            "tracked_files": 99,
+            "spec_docs": 20,
+            "test_files": 16,
+            "peak_commits_in_a_day": 35,
+            "provenance": "verified"
+          },
+          "claude_practice": {
+            "text": "Two-tier model routing by task: Sonnet for multi-factor trade analysis, Haiku for high-volume news classification, chosen on a cost-versus-quality basis and documented in the design. Every significant feature has a dated design doc followed by a numbered implementation plan.",
+            "provenance": "verified"
+          }
+        },
+        {
+          "id": "soccerratings",
+          "name": "SoccerRatings",
+          "order": 3,
+          "tagline": "Replaced a youth league's shared-spreadsheet player evaluation with an app that teaches the rubric while it collects",
+          "status": "shipped",
+          "first_commit": "2026-07-25",
+          "last_commit": "2026-07-27",
+          "active_days": 2,
+          "calendar_days": 3,
+          "domain": "Civic / youth sports",
+          "repo": "https://github.com/FlipYaFaReal/SoccerStar",
+          "problem_statement": {
+            "text": "Volunteer parents rate youth soccer players to determine league placement, today in a shared Excel form. Volunteers do not understand how to evaluate: the form's only guidance is a generic 1-5 legend and a block of instructions most people never read. Free-text entry invites invalid data such as '1-2' ranges, blanks, and horizontal scoring, so forms get returned for redo days later. Spreadsheets get lost, versioned wrong, and merged by hand. And there is no memory: past-season ratings live in old files and rarely inform placement.",
+            "provenance": "quoted",
+            "source": "docs/superpowers/specs/2026-07-25-player-rating-app-design.md"
+          },
+          "intended_users": {
+            "text": "Volunteer parent-coaches rating players on their assigned teams, and league admins running the season. Everyone who signs in is a rater first; admin is an additive privilege on top, because the admin is commonly also a coach.",
+            "provenance": "quoted"
+          },
+          "success_criteria": {
+            "text": "Idiot-proof collection of 13 ratings per player on whatever device the volunteer has. Teach while collecting, so the flow enforces the league's doctrine rather than relying on instructions. Multi-season persistence with player identity that survives roster churn. Committee-ready reports where the app informs and humans decide. Free-tier hosting at 150-500 players per season.",
+            "provenance": "quoted"
+          },
+          "features_built": [
+            "Magic-link authentication, invite-only against the imported roster: no passwords, no self-registration",
+            "Category-first vertical scoring: rate every player on one category before moving to the next, which is the league's own doctrine made structural",
+            "Tap-to-select whole numbers only, making invalid input impossible rather than merely discouraged",
+            "5-is-best ordering, displayed first, because a good rating is the most common case",
+            "Auto-save on every tap, guarded against stale completions",
+            "Never rate your own child, enforced by the system",
+            "Full-range enforcement: each category should include low scores; configurable per season to warn or hard-block at submit",
+            "Three-step CSV import wizard with returning-player matching so rating history persists across seasons",
+            "Admin-editable rubric with per-category anchor text, snapshotted per season so historical data keeps the rubric it was scored under",
+            "Committee report: per-category and group averages, multi-season weighted score, trend against last season, CSV export",
+            "Data-quality flags surfaced rather than hidden: 'raters disagree', 'single rater', 'N not-rated'",
+            "Installable PWA for sideline phone use"
+          ],
+          "market_assessment": {
+            "opportunity": "Not a business and not intended as one. It is a civic tool for one league, built with deliberate multi-region headroom: every table carries an organization_id, seeded with exactly one organization and no signup UI. The design doc explicitly calls this 'cheap insurance, not speculative features'.",
+            "generalizability": "The pattern generalizes cleanly to any volunteer-scored evaluation with a rubric and a committee: other youth sports, judged competitions, grant review panels. Nothing in the domain model is soccer-specific except the rubric content, which is admin-editable.",
+            "verdict": "The most genuinely useful thing in the portfolio, and the least commercial. That combination is worth stating plainly rather than dressing up.",
+            "provenance": "drafted"
+          },
+          "what_went_sideways": {
+            "text": "Nothing did. This is the control case. Fifty-six commits on July 25 took it from design document to a tested, secured, accessible, deployed PWA. The only subsequent commit, two days later, replaces the circular rating buttons with soccer balls. The scope in the design document is the scope that shipped, and the non-goals list held: no native apps, no self-serve signup for other regions, no automated placement decisions, no rater-leniency normalization, no payments, and no player data beyond name, birth year, and team.",
+            "provenance": "verified"
+          },
+          "lesson": {
+            "text": "This is what the previous five months bought. The specification was narrow, the non-goals were written down before the code started, and the product doctrine was encoded in the interaction design rather than in instructions nobody reads.",
+            "provenance": "drafted"
+          },
+          "notable_rigor": {
+            "text": "The most rigorously built of the eight, in a single day: scoring aggregation implemented test-first, row-level-security access-matrix integration tests with error codes and existence proofs, Playwright end-to-end coverage driven through real magic links, least-privilege database grants for the anonymous role, organization_id pinned in write policies to prevent cross-tenant writes, submissions locked on insert, and a dedicated pass of accessibility fixes covering keyboard access to report sort and drill-down, dialog semantics and focus management, inert backgrounds for panels, and screen-reader handling.",
+            "provenance": "verified"
+          },
+          "stack": {
+            "frontend": "Next.js App Router, TypeScript, Tailwind, PWA",
+            "backend": "Supabase: PostgreSQL, Auth with email magic links, Row-Level Security",
+            "email": "Resend, chosen because Supabase's built-in mailer allows only a couple of emails per hour, which is unusable on evaluation night",
+            "testing": [
+              "Vitest",
+              "Playwright"
+            ],
+            "infra": [
+              "Vercel free tier"
+            ]
+          },
+          "metrics": {
+            "commits": 57,
+            "loc": 10115,
+            "tracked_files": 133,
+            "spec_docs": 9,
+            "test_files": 16,
+            "peak_commits_in_a_day": 56,
+            "provenance": "verified"
+          },
+          "claude_practice": {
+            "text": "Both a CLAUDE.md and an AGENTS.md in the repo. Specs and plans separated into docs/superpowers/specs and docs/superpowers/plans. Four plan documents covering v1, role unification, matchday UX, and Google sign-in, each following an approved design. Commit messages show explicit review rounds: 'final review fixes' appears twice, addressing chronology, auth unlink on email change, and season invariants.",
+            "provenance": "verified"
+          }
+        },
+        {
+          "id": "capturerapture",
+          "name": "CaptureRapture",
+          "order": 4,
+          "tagline": "Turn a live enterprise-system screen share into an interactive, self-contained training guide",
+          "status": "working prototype, one day of development",
+          "first_commit": "2026-03-26",
+          "last_commit": "2026-03-26",
+          "active_days": 1,
+          "calendar_days": 1,
+          "domain": "Enterprise learning and development",
+          "repo": null,
+          "problem_statement": {
+            "text": "Organizations rely on enterprise systems (ERP, CRM, HRIS) that require ongoing employee training. Creating the training material is time-consuming and error-prone: writing documentation from memory, taking manual screenshots and pasting into Word, producing guides that are outdated, incomplete, or hard to follow.",
+            "provenance": "quoted",
+            "source": "docs/requirements/PRD.md"
+          },
+          "intended_users": {
+            "text": "Three personas: the Training Manager who owns onboarding and needs guides fast and current; the Subject Matter Expert who is not especially technical and wants to capture process knowledge before it is lost; and the L&D team member curating a reusable, standardized library.",
+            "provenance": "quoted"
+          },
+          "success_criteria": {
+            "text": "Snapshot capture latency under 200ms. Runs entirely in the browser, so it works against any authenticated enterprise application on screen without server infrastructure and without transmitting screen data.",
+            "provenance": "quoted"
+          },
+          "features_built": [
+            "Screen, window, or tab capture via the browser getDisplayMedia API with live preview",
+            "On-demand snapshots from the live feed, stored in capture order with timestamps",
+            "Non-destructive canvas annotation: text labels, rectangles, arrows, freeform highlights, configurable colour and stroke",
+            "Step-by-step guide builder with drag-and-drop reordering, inline title and description editing, duplicate and delete",
+            "Export to a self-contained HTML file with base64-inlined images and print-friendly CSS",
+            "Local project persistence in IndexedDB with no account or login",
+            "Browser extension for Chrome and Edge, maintained in parallel",
+            "DOM serialization on click capture, producing an interactive HTML tutorial rather than a static screenshot walkthrough"
+          ],
+          "market_assessment": {
+            "opportunity": "The strongest commercial opportunity in the portfolio. This is the Scribe, Tango, and iorad category: a real, funded, growing market for automatic process documentation, with enterprise buyers who already have budget for L&D tooling.",
+            "differentiator": "Fully client-side operation is a genuine enterprise wedge, not a technical footnote. Scribe and Tango transmit captured screens to a vendor cloud, which triggers security review at exactly the customers who most need the tool: regulated industries documenting ERP and HRIS workflows containing employee and financial data. 'Your screen never leaves your machine' shortens an enterprise sales cycle materially. The interactive DOM-snapshot export goes further than screenshot-based competitors.",
+            "why_it_stalled": "Nothing about the market. It received one day.",
+            "verdict": "Best idea, least investment. If any project here deserved the fifteen days ListingLift got, it was this one.",
+            "provenance": "drafted"
+          },
+          "what_went_sideways": {
+            "text": "It did not derail so much as it was never resourced. The first commit is labelled 'initial: existing CaptureRapture codebase', meaning the application predates this git history and the repo captures only one day of work extending it. That single day added DOM serialization, IndexedDB snapshot persistence, the interactive HTML tutorial export, and a mirrored Edge extension, then fixed a race condition, a DOMParser wrapping bug, and a listener leak in the new tutorial code. It ends there, mid-momentum, with the most valuable feature just landed.",
+            "provenance": "drafted"
+          },
+          "lesson": {
+            "text": "Worth asking why this one got a day and the crowded photo-filter market got fifteen. The honest answer is probably that ListingLift was further along and momentum is its own gravity, which is exactly the trap.",
+            "provenance": "drafted"
+          },
+          "notable_rigor": {
+            "text": "Despite being a single day, it carries a full PRD, an architecture document, and two Architecture Decision Records, plus a paired design and implementation plan for the interactive tutorial feature. The Chrome and Edge extensions were deliberately kept in sync, with fixes mirrored across both in separate commits. The workflow decision record DEC-001 weighs three MVP scope options for screenshots versus video capture, with pros and cons for each, and defers video to v2 on the grounds that most enterprise training guides are static step-by-step documents and video would roughly double the implementation timeline. Participants listed: Product Manager as decision owner, Lead Engineer, UX Designer, QA Lead.",
+            "provenance": "verified"
+          },
+          "stack": {
+            "frontend": "TypeScript, Vite, HTML5 Canvas",
+            "storage": "IndexedDB",
+            "platform": "Chrome and Edge browser extensions, side panel",
+            "apis": [
+              "getDisplayMedia",
+              "DOMParser"
+            ]
+          },
+          "metrics": {
+            "commits": 12,
+            "loc": 8709,
+            "tracked_files": 48,
+            "spec_docs": 6,
+            "test_files": 1,
+            "peak_commits_in_a_day": 12,
+            "provenance": "verified"
+          },
+          "claude_practice": {
+            "text": "PRD, architecture doc, and ADRs written before the feature work, then a design document and implementation plan for the one feature built that day. The ADR habit shows up here more than anywhere else in the portfolio.",
+            "provenance": "verified"
+          }
+        },
+        {
+          "id": "careercalling",
+          "name": "CareerCalling",
+          "order": 5,
+          "tagline": "An AI job-search pipeline, built as a web app and then quietly replaced by the agents that outperformed it",
+          "status": "built; superseded by a scheduled multi-agent pipeline",
+          "first_commit": "2026-03-08",
+          "last_commit": "2026-03-08",
+          "active_days": 1,
+          "calendar_days": 1,
+          "domain": "Career tooling / personal productivity",
+          "repo": null,
+          "location_note": "Lives in Documents/Job Hunt/CareerCalling rather than Documents/Products.",
+          "problem_statement": {
+            "text": "Job searching as a product professional is fragmented and time-consuming: scanning multiple boards manually, mentally assessing fit against dozens of listings, rewriting resumes and cover letters for each application, tracking everything in spreadsheets with no analytics, and losing track of where you stand across opportunities.",
+            "provenance": "quoted",
+            "source": "docs/requirements/PRD.md"
+          },
+          "intended_users": {
+            "text": "'Alex', a senior product manager with 8+ years of experience, searching while employed, who wants to apply to 5-10 well-matched roles per week. In practice the user was the author.",
+            "provenance": "quoted"
+          },
+          "success_criteria": {
+            "text": "Under 10 minutes from discovering a job to completing the application. Manage 50+ active applications without losing track. Fit scoring agrees with the user's own assessment more than 80% of the time. AI-generated materials need under 3 minutes of editing.",
+            "provenance": "quoted"
+          },
+          "features_built": [
+            "Structured professional profile: skills inventory, experience, target roles, compensation, location preferences, values",
+            "Job ingestion four ways: Adzuna API search, manual entry, URL import with parsing, CSV bulk import",
+            "Claude-powered fit scoring, 0-100, across five dimensions: skills, experience level, compensation, culture, location",
+            "Explainable scores showing which factors moved the number, with manual override",
+            "Tailored resume and cover letter generation with in-app editing and PDF export",
+            "Kanban application tracker with drag-and-drop stage management",
+            "Analytics dashboard: funnel visualization, response rates, activity tracking"
+          ],
+          "market_assessment": {
+            "opportunity": "Crowded. Teal, Simplify, Huntr, and a long tail of AI resume tools occupy this space, most of them free at the tier that matters. Consumer job-search tooling also has brutal retention economics: the product succeeds by making itself unnecessary.",
+            "the_more_interesting_outcome": "The lineage is documented rather than inferred. The Job Hunt OS system README carries a 'Retired' list that reads, in part: 'CareerCalling (parked), Daily Search CLAUDE.md (superseded).' So there are three generations of the same problem: Daily Search (February, a manual Cowork scanner prompt producing ranked spreadsheets and briefs), CareerCalling (March, an attempt to make it an application), and Job Hunt OS (July, an autonomous scheduled agent). CareerCalling is the middle generation, and it was parked rather than displaced by something that already existed.",
+            "verdict": "The interesting decision is not that an app got abandoned. It is that the same job-to-be-done was attacked three times in three different forms, and the form that won has no user interface at all.",
+            "provenance": "drafted"
+          },
+          "what_went_sideways": {
+            "text": "One squashed commit on March 8 containing the entire 7,313-line application, and nothing after. Git history here tells you almost nothing about how it was built, which is worth stating up front rather than letting a reader discover it. What replaced it is more interesting than what it was: the same job-to-be-done, executed by scheduled agents producing spreadsheets and briefs, with no UI at all.",
+            "provenance": "verified"
+          },
+          "lesson": {
+            "text": "Building the app is the reflex. Asking whether the job needs an app is the product skill. Three generations in, the answer for a single-user workflow turned out to be scheduled agents writing files, with no database, no UI, and no deployment. That conclusion cost one app to reach.",
+            "provenance": "verified"
+          },
+          "stack": {
+            "framework": "Next.js App Router, TypeScript",
+            "data": "SQLite via Prisma ORM",
+            "ai": "Claude API",
+            "ui": [
+              "Tailwind CSS",
+              "shadcn/ui",
+              "Recharts",
+              "@hello-pangea/dnd"
+            ],
+            "integrations": [
+              "Adzuna API"
+            ]
+          },
+          "metrics": {
+            "commits": 1,
+            "loc": 7313,
+            "spec_docs": 2,
+            "peak_commits_in_a_day": 1,
+            "provenance": "verified"
+          },
+          "claude_practice": {
+            "text": "A PRD and an architecture document, both written before the build. The successor pipeline is the more relevant Claude artifact: scheduled agents, daily runs, structured spreadsheet output, and per-role document generation.",
+            "provenance": "verified"
+          },
+          "notable_rigor": {
+            "text": "The workflow directory holds three decision records, sixteen work items with acceptance criteria, and a session log for 2026-03-08, all for a project whose entire git history is one squashed commit. The planning survived in more detail than the version control did.",
+            "provenance": "verified"
+          }
+        },
+        {
+          "id": "geminivibes",
+          "name": "GeminiVibes",
+          "aka": "LifePulse",
+          "order": 6,
+          "tagline": "An AI chief of staff for your whole life, which spent most of its two days fighting its own build system",
+          "status": "prototype, abandoned after two days",
+          "first_commit": "2026-04-06",
+          "last_commit": "2026-04-07",
+          "active_days": 2,
+          "calendar_days": 2,
+          "domain": "Personal productivity / AI assistant",
+          "repo": "https://github.com/FlipYaFaReal/GeminiVibes",
+          "problem_statement": {
+            "text": "Busy professionals juggling work, family, home, relationships, faith, and health suffer cognitive overload. Existing tools fail because they are not proactive (they store things but do not think for you), they force rigid categories that do not match how people actually think, they fragment attention across disconnected apps, and they require ongoing manual maintenance to stay current.",
+            "provenance": "quoted",
+            "source": "docs/plans/2026-04-06-lifepulse-design.md"
+          },
+          "intended_users": {
+            "text": "The author, and by extension any professional running several demanding life domains at once.",
+            "provenance": "drafted"
+          },
+          "success_criteria": {
+            "text": "Stated as a design principle rather than a metric: the user never manually assigns categories, they just talk, and the AI figures out where things belong. Nudge frequency is AI-calibrated, learning what the user acts on and dialing back noise.",
+            "provenance": "quoted"
+          },
+          "features_built": [
+            "Conversational capture as the primary input, with the AI confirming what it understood and what it did",
+            "Auto-detected life domains (family, work, home, relationships, faith, health, growth) as lenses rather than folders",
+            "Claude conversation service with tool definitions and a tool-executor loop",
+            "Three nudge types: time-sensitive, drift alerts for neglected domains, and opportunity nudges",
+            "Background nudge generation on a cron job, with push notification delivery",
+            "Today view: timeline of what is ahead plus items needing attention",
+            "Life Radar: every domain at a glance, green, yellow, or red by health",
+            "Google Calendar two-way sync",
+            "Auth rebuilt on Clerk after starting with custom Google OAuth and JWT"
+          ],
+          "market_assessment": {
+            "opportunity": "The hardest category attempted here and among the hardest in consumer software. The 'proactive AI life assistant' graveyard is large and well funded. The binding constraint is not capture, sync, or UI; it is nudge quality. A nudge that misfires twice gets notifications disabled forever, and calibration requires longitudinal data the product cannot have on day one.",
+            "what_would_have_tested_the_thesis": "The entire risk sits in whether the AI can tell a useful nudge from an annoying one. That question needed a week of the author's own real data through the crudest possible harness, not a production auth stack.",
+            "verdict": "A good insight about proactivity, aimed at a market that punishes exactly the thing that was never tested.",
+            "provenance": "drafted"
+          },
+          "what_went_sideways": {
+            "text": "The toolchain ate the project. Day one is product: schema, chat endpoint with Claude and tool execution, chat UI, Today view, Life Radar. Day two is almost entirely infrastructure: deduplicate React in the monorepo to fix a Clerk hooks crash, pin React 19.1.0 via overrides to fix the CI build, switch from @clerk/clerk-expo to @clerk/clerk-react for web, correct the Azure Static Web Apps workflow for an Expo monorepo, add an SPA navigation fallback, switch web output to SPA mode and guard Clerk init, fix backend CommonJS output, resolve Clerk user IDs to internal UUIDs. Threaded through that same day is a full visual rebrand from LifePulse to GeminiVibes with a cosmic aurora dark theme, a documented colour palette, per-domain colours, Ionicons, and glow effects. On day two of a two-day project, the effort went to the build system and the paint, and never to the one thing the product lived or died on: whether the nudges were any good.",
+            "provenance": "drafted"
+          },
+          "lesson": {
+            "text": "The stack was chosen as if the idea were already validated. An Expo React Native monorepo with tRPC, Drizzle, Clerk, Docker Postgres, and Azure Static Web Apps is a reasonable choice for a product with users and a wildly expensive one for a two-day test of a hypothesis. The riskiest assumption should have been the cheapest thing to test.",
+            "provenance": "drafted"
+          },
+          "stack": {
+            "frontend": "Expo (React Native) targeting iOS, Android, and web",
+            "backend": "Fastify with tRPC",
+            "data": "PostgreSQL with Drizzle ORM",
+            "ai": "Claude API with tool use",
+            "auth": "Clerk, replacing custom Google OAuth and JWT",
+            "infra": [
+              "Docker Compose",
+              "Turborepo",
+              "Azure Static Web Apps",
+              "GitHub Actions"
+            ]
+          },
+          "metrics": {
+            "commits": 37,
+            "loc": 3630,
+            "tracked_files": 98,
+            "spec_docs": 5,
+            "test_files": 10,
+            "peak_commits_in_a_day": 24,
+            "provenance": "verified"
+          },
+          "claude_practice": {
+            "text": "A design document and a paired implementation plan on day one, and a separate rebrand design on day two. The Claude integration itself is the most sophisticated of the eight: a conversation service with tool definitions and a system prompt, an executor that handles tool_use responses, and background generation of proactive content on a schedule.",
+            "provenance": "verified"
+          }
+        },
+        {
+          "id": "gmail-cleanup",
+          "name": "Gmail Cleanup",
+          "order": 7,
+          "tagline": "One job, done, with a dry run and a confirmation gate before it touched anything",
+          "status": "shipped and used",
+          "first_commit": "2026-05-31",
+          "last_commit": "2026-05-31",
+          "active_days": 1,
+          "calendar_days": 1,
+          "domain": "Personal automation",
+          "repo": null,
+          "problem_statement": {
+            "text": "Reduce inbox noise and impose a durable organization system on a Gmail account that has grown unmanageable over the years. The outcome wanted: a near-zero inbox, mass-mailer noise routed out of sight, important mail self-organizing into labels, and the existing backlog cleaned up in one automated pass.",
+            "provenance": "quoted",
+            "source": "docs/superpowers/specs/2026-05-31-gmail-cleanup-design.md"
+          },
+          "intended_users": {
+            "text": "One user, one inbox.",
+            "provenance": "verified"
+          },
+          "success_criteria": {
+            "text": "A ten-label hierarchy where high-signal categories (Personal, Work, Finance, Real Estate) stay in the inbox and everything else (Marketplace, Jobs, Retail, Social, Alerts) skips it, with filters that keep it that way going forward.",
+            "provenance": "quoted"
+          },
+          "features_built": [
+            "OAuth authentication against the Gmail API",
+            "Label setup phase: deletes existing labels after explicit user confirmation and installs a designed ten-label hierarchy",
+            "Filter installation, with skip-inbox plus label for mass mailers and label-only for newsletters",
+            "Dry-run phase that reports exactly what would change before anything changes",
+            "Execute phase gated behind confirmation, with file logging of every action taken",
+            "Batched search and modify helpers to stay within API quotas"
+          ],
+          "market_assessment": {
+            "opportunity": "None, deliberately. This is a personal utility that took a day and solved the problem it was pointed at. Including it in a portfolio is a statement about proportionality: not everything needs to be a product.",
+            "verdict": "The correct amount of software for the problem. That is not faint praise; it is the thing most of the other seven projects struggled with.",
+            "provenance": "drafted"
+          },
+          "what_went_sideways": {
+            "text": "Nothing. Ten commits in one day: scaffold and auth, label setup, filter installation, dry run, execute with confirmation and logging, batch helpers, then three cleanup commits that remove dead code, fix a logging initialization order bug, correct the no-reply matching patterns, and clarify query syntax in the filter-deletion path. Then it stopped, because it was finished.",
+            "provenance": "verified"
+          },
+          "lesson": {
+            "text": "The most mature engineering judgment in the entire portfolio is in the smallest project. This script permanently rewrites the label structure of a personal email account, and it was built dry-run first, confirmation-gated, and fully logged. That instinct, for irreversible operations to be inspectable before they run, is worth more in a forward-deployed context than any of the larger builds.",
+            "provenance": "drafted"
+          },
+          "stack": {
+            "language": "Python",
+            "apis": [
+              "Gmail API",
+              "Google OAuth"
+            ],
+            "output": "Local file log of every mutation"
+          },
+          "metrics": {
+            "commits": 10,
+            "loc": 385,
+            "tracked_files": 4,
+            "spec_docs": 2,
+            "test_files": 0,
+            "peak_commits_in_a_day": 10,
+            "provenance": "verified"
+          },
+          "claude_practice": {
+            "text": "A design spec written first, covering the full label taxonomy, per-label inbox behaviour, and the sender-domain and keyword rules for every filter, followed by an implementation plan. The phase structure of the code mirrors the phase structure of the spec exactly.",
+            "provenance": "verified"
+          }
+        },
+        {
+          "id": "househelper",
+          "name": "HouseHelper",
+          "order": 8,
+          "tagline": "Built to nine of ten tasks with a passing build, and not one line of it was ever committed",
+          "status": "built, never committed",
+          "first_commit": "2026-03-09",
+          "last_commit": "2026-03-09",
+          "active_days": 1,
+          "calendar_days": 1,
+          "domain": "Real estate / consumer collaboration",
+          "repo": null,
+          "problem_statement": {
+            "text": "House hunting is overwhelming, especially when several people are involved in the decision. There is no simple way to collaboratively track listings, share opinions, and prioritize which homes to visit. People resort to scattered text messages, spreadsheets, and mental notes, which loses information and misaligns priorities.",
+            "provenance": "quoted",
+            "source": "docs/requirements/PRD.md"
+          },
+          "intended_users": {
+            "text": "Three personas: the Owner searching for a house for themselves and their two kids and making the final call; Family Members including kids who want to see listings and express preferences; and Friends acting as trusted advisors who may find and add listings independently.",
+            "provenance": "quoted"
+          },
+          "success_criteria": {
+            "text": "All group members can add and rate listings independently. The viewing queue reflects group consensus plus owner priority. Usable on mobile without pinching or zooming. Pages load in under two seconds on 4G. WCAG 2.1 AA compliance.",
+            "provenance": "quoted"
+          },
+          "features_built": [
+            "Email authentication with NextAuth, signup and login routes",
+            "Group creation, settings, and invite-by-code join flow",
+            "Listing CRUD with grid, detail, and edit pages",
+            "Star ratings, per-user and aggregate display",
+            "Threaded comment sections",
+            "Viewing queue with reorderable items",
+            "Dashboard, navbar, and providers",
+            "Prisma schema with seven models: User, Group, GroupMember, Listing, Rating, Comment, QueueItem"
+          ],
+          "market_assessment": {
+            "opportunity": "Thin. Zillow and Redfin both ship collaborative shortlists and shared searches for free, inside the app where the listings already live. A standalone tool has to be materially better at the collaboration itself to overcome not owning the inventory, and the PRD's feature set, ratings, comments, and a shared queue, is roughly what the incumbents already offer.",
+            "verdict": "Thin market, and a reasonable thing to stop. But the market was almost certainly not why it stopped, since the build was already finished when it did.",
+            "provenance": "drafted",
+            "needs_verification": true
+          },
+          "what_went_sideways": {
+            "text": "This was written up in the first pass as 'the complete product definition and no product.' That was wrong, and the error is instructive. Git shows one commit containing the create-next-app scaffold, 103 lines. The working directory contains 4,432 hand-written lines across 37 files: auth routes, group management, listing CRUD, ratings, comments, the viewing queue, and a seven-model Prisma schema. The workflow state file records nine of ten work items done and reads 'All core features implemented. Build passes.' The single remaining backlog item is TASK-010, sorting and filtering. The one recorded blocker is not a design problem or a market problem: 'Need PostgreSQL running to test at runtime.' The product was built. It was never run, and it was never committed.",
+            "provenance": "verified"
+          },
+          "lesson": {
+            "text": "The project did not stop at the edge of building. It stopped at the edge of running. Everything up to and including a passing build was done by the workflow; what was left was the un-delegatable part, standing up a database and watching the thing actually work, and that is where it ended. The uncommitted state is the tell. Nine-tenths of a working application sat in a directory for five months without a git add, which means the moment of 'this is real now' never arrived. Worth naming precisely, because it is a different and more common failure than losing interest in an idea.",
+            "provenance": "drafted"
+          },
+          "stack": {
+            "framework": "Next.js App Router, TypeScript, Prisma",
+            "status": "scaffold only"
+          },
+          "metrics": {
+            "commits": 1,
+            "loc": 4432,
+            "loc_note": "Hand-written source on disk, excluding the generated Prisma client. Only 103 lines (the create-next-app scaffold) were ever committed.",
+            "loc_committed": 103,
+            "source_files": 37,
+            "data_models": 7,
+            "work_items_total": 10,
+            "work_items_done": 9,
+            "spec_docs": 10,
+            "spec_docs_committed": 0,
+            "test_files": 0,
+            "provenance": "verified"
+          },
+          "claude_practice": {
+            "text": "The cleanest example of the front half of the method in the whole portfolio: problem statement, personas, MoSCoW prioritization with an explicit Won't Have list, success metrics, non-functional requirements, out-of-scope, then seven numbered user stories and an ADR. Ten documents, zero committed.",
+            "provenance": "verified"
+          },
+          "notable_rigor": {
+            "text": "The clearest surviving trace of the multi-agent workflow system: four decision records, ten work items with acceptance criteria and dependency graphs, a session log for 2026-03-09, and a state file tracking the backlog-to-done pipeline. TASK-001's acceptance criteria name all seven Prisma models, and all seven exist in the schema on disk. The spec was followed.",
+            "provenance": "verified"
+          }
+        }
+      ]
+    },
+    "systems": {
+      "definition": "Repeatable machinery, methodology, and infrastructure. No single repo, and commit counts do not apply. Several are more relevant to a forward-deployed role than the applications are.",
+      "count": 6,
+      "items": [
+        {
+          "id": "multi-agent-workflow",
+          "name": "Multi-Agent Software Development Workflow",
+          "order": 1,
+          "tagline": "A simulated product organization that takes an idea to shippable software and resolves its own ambiguities",
+          "status": "built and used across at least five projects",
+          "period": "2026-03",
+          "domain": "AI methodology / delivery process",
+          "problem_statement": {
+            "text": "Agentic coding produces volume easily and quality rarely. The characteristic failure is plausible-looking code that nobody validated, built against requirements nobody wrote down, with the ambiguities silently resolved by whichever agent hit them first.",
+            "provenance": "drafted"
+          },
+          "what_it_is": {
+            "text": "A Claude Code orchestration prompt defining a full simulated product organization, run in three phases. Phase 1, a requirements panel of Product Manager, Lead Engineer, UX Designer, and QA Lead, producing a PRD, user stories, and acceptance criteria. Phase 2, architecture, with a Software Architect and Engineering Lead producing ADRs, technical design, and a task breakdown with dependencies. Phase 3, an implementation loop: Engineer, then Code Reviewer, then Engineer revision, then Security Reviewer, then QA validation.",
+            "provenance": "reported",
+            "source": "Reconstructed by the author from chat history, Feb-Aug 2026, and supplied 2026-08-22. Not verifiable from files on this machine unless otherwise noted."
+          },
+          "supporting_machinery": [
+            "A .workflow/ directory with JSON state management",
+            "Decision records for every resolved ambiguity, with options considered, pros and cons, the decision, participants, and consequences",
+            "A work-item state machine: backlog, in-progress, review, qa, done",
+            "Session logs for traceability",
+            "Enforced test-first development",
+            "Mandatory security review",
+            "A rule that every line of code traces back to an acceptance criterion",
+            "Maximum review cycles with escalation, so the loop cannot run forever"
+          ],
+          "verified_on_disk": {
+            "text": "This is the one item from the chat-history source that is directly corroborated by files. Five repositories carry a .workflow/ directory: ListingLift, CaptureRapture, HouseHelper, CareerCalling, and TradeParrot. HouseHelper's is the most complete, holding four decision records, ten work items with acceptance criteria and dependency lists, a session log, and a state file tracking nine of ten items to done. CareerCalling's holds three decisions and sixteen work items. CaptureRapture's DEC-001 is a three-option MVP scope analysis. The decision records name their participants by role: 'Product Manager (decision owner), Lead Engineer, UX Designer, QA Lead.' The session log opens: 'Agent: PM - Analyzing product idea - Convening expert panel for requirements definition.'",
+            "provenance": "verified"
+          },
+          "why_it_matters": {
+            "text": "This is the machine that produced the 88 specification documents catalogued in tier one. The first pass through this portfolio found the output and missed the generator. It is forward-deployed methodology written down: a repeatable route from a client's idea to shipped software, with AI doing the volume and explicit quality gates preventing the usual failure mode. For a role that asks someone to convert ambiguous requirements into clear PRDs and evaluation criteria, this is the artifact that shows the conversion is systematic rather than ad hoc.",
+            "provenance": "drafted"
+          },
+          "honest_limit": {
+            "text": "Worth being precise about what the on-disk evidence proves. It proves the system ran and produced structured artifacts on five projects. It does not prove every gate fired every time: TradeParrot's .workflow/ is empty of records, and no project shows work items progressing through the review and qa states in their directory structure rather than only in the state file's counters.",
+            "provenance": "verified"
+          }
+        },
+        {
+          "id": "jobhunt-os",
+          "name": "Job Hunt OS",
+          "order": 2,
+          "tagline": "An autonomous agent that runs a job search every weekday morning and commits its own audit log",
+          "status": "live since 2026-07-27, running in TEST mode",
+          "period": "2026-02 to present",
+          "domain": "Autonomous agents / personal operations",
+          "problem_statement": {
+            "text": "A senior job search is a daily operations problem disguised as a writing problem: scanning boards, scoring roles against criteria that drift, verifying a posting is still live, assembling tailored materials, tracking replies, and following up on schedule, every day, for months, while employed.",
+            "provenance": "drafted"
+          },
+          "what_it_is": {
+            "text": "A scheduled agent whose brain is a private GitHub repository. Every weekday at about 7:00 AM Eastern a run clones the repo, does the day's work, commits, and pushes. The system README states the design principle directly: 'The commit history is the audit log of your search.' State lives in version-controlled markdown - settings, pipeline, ledger, trends - and the operator edits any file, commits, and the next morning's run obeys it. 'Your edits always win.'",
+            "provenance": "quoted",
+            "source": "SYSTEM README - Job Hunt OS - 2026-07-27.md"
+          },
+          "pipeline": [
+            "Scan for roles",
+            "Score against rubric v2",
+            "Canonical-ATS verification that the posting is real and live",
+            "Pipeline and ledger updates, with a 213-role dedupe index so nothing re-surfaces",
+            "Packet generation for anything scoring 85 or above",
+            "Submission by tier and mode: Tier 1 auto when LIVE, Tier 2 prepared for the operator's browser, Tier 3 queued with micro-guides",
+            "Gmail watched for replies, with responses drafted",
+            "Follow-ups at 7 and 14 days",
+            "Warm-intro targets identified per submission",
+            "Morning brief pushed to the operator's phone"
+          ],
+          "the_rubric": {
+            "text": "Rubric v2 weights Talent 40, Dynamism 25, Compensation-against-target 25, Practical 10, with mission alignment as a +5 bonus that is explicitly never a gate. The version number matters: rubric v1 lived in the earlier Daily Search scanner and weighted Compensation 35, Mission 25, Dynamism 22, Company size 18. The weights were revised between generations, and 'mission is a bonus, not a gate' is a scoring-design decision made after watching v1 behave.",
+            "provenance": "quoted"
+          },
+          "the_safety_design": {
+            "text": "The system can submit applications on the operator's behalf, which is an irreversible outward-facing action, and it ships gated. A settings file carries MODE: TEST, and auto-submission only engages when that is changed to LIVE and committed. The README's status section says the first run is a backlog triage in TEST mode and advises flipping to LIVE only 'when you trust what you see.' This is the same instinct as Gmail Cleanup's dry-run phase, applied to something that emails employers.",
+            "provenance": "quoted"
+          },
+          "what_it_retired": {
+            "text": "The README keeps an explicit Retired list, which is unusual and useful: Notion as the state store, killed within hours by the workspace's block cap; a Gmail-draft-as-state idea, recorded as 'gross, correctly vetoed'; CareerCalling, parked; the Daily Search prompt, superseded; manual scan kickoffs; and the metric 'roles surfaced,' which was dropped as a vanity number. A system that documents its own dead ends is documenting its reasoning.",
+            "provenance": "quoted"
+          },
+          "why_it_matters": {
+            "text": "It is the longest-running thing in the portfolio, spanning February to the present across three architectural generations, and it is the only system here that takes consequential real-world actions on the author's behalf. The cover letter for this very role claims a multi-agent Claude pipeline assembled the application; this is that pipeline, and it is the claim the hiring manager is most likely to test.",
+            "provenance": "drafted"
+          }
+        },
+        {
+          "id": "operation-teleport",
+          "name": "Operation Teleport",
+          "order": 3,
+          "tagline": "A 30-day household relocation run as a delivery engagement, replanned mid-flight when its assumptions broke",
+          "status": "executed",
+          "period": "2026-04-17 to 2026-05-15",
+          "domain": "Operations / program management",
+          "problem_statement": {
+            "text": "A house listed and unfurnished, the family living in a rental to keep it show-ready, a slow market making double carrying costs imprudent, a lease ending in thirty days, roughly $3,000 of budget, furniture to dispose of, and a requirement that the house stay actively listed and show-ready after moving back in.",
+            "provenance": "quoted",
+            "source": "docs/plans/2026-04-17-operation-teleport-design.md"
+          },
+          "the_approach": {
+            "text": "Sell-First, Move-Last: list and sell from the apartment while still living there, then move only keepers at the end, minimizing double-handling, with a fallback to a bulk buyer if selling stalled by day ten. Two alternatives were considered and rejected in writing, each with its reason: move-first-and-sort-at-the-house, rejected because the garage becomes unusable and showings see clutter; and an estate-sale kickoff, rejected because it exceeded the sell-big-items-only scope and the commissions did not justify the volume. Four workstreams: Dispose and Store, Acquire, Move, Stage.",
+            "provenance": "quoted"
+          },
+          "the_replan": {
+            "text": "The most instructive artifact is rev3, filed 2026-04-29, which supersedes rev2 and states why. Two assumptions had broken. The leather sofa refurbishment 'doesn't pencil' at $700-900, so those pieces went to storage and the family room got sourced fresh. And move-in was pulled forward ten days so that 'sourcing decisions happen in context, with the rooms in front of you, not abstractly from the apartment.' The single big move became two waves: a functional baseline on May 5 defined as sleepable, cookable, workable, and pet-safe by Tuesday night, then a separate cleanout week ending in the hard lease deadline. Rev2 was frozen in place rather than deleted, marked 'do not execute from it.'",
+            "provenance": "quoted",
+            "source": "docs/plans/2026-04-29-OT-rev3-notion-design.md"
+          },
+          "custom_tooling": {
+            "text": "A custom Claude skill, marketplace-furniture-hunt, covering four concurrent furnishing hunts. It encodes a locked constraint set - a 25-mile radius expanding to 40 only after the earlier tiers dry up, no firm price ceiling but flag value at any price - and an auto-skip list of styles and brands that are never worth surfacing. It runs in two modes, generating tiered search vocabularies per room or evaluating a pasted listing, and it persists to Notion rather than to chat, with an instruction not to dump forty links into a conversation. The evaluation mode grades listings on style, quality, and price, and returns a verdict on whether a claimed brand is credible.",
+            "provenance": "verified",
+            "source": ".claude/skills/marketplace-furniture-hunt/SKILL.md"
+          },
+          "artifacts": [
+            "Four design and plan documents, including a full superseding replan",
+            "A custom Claude skill with locked constraints and a persistence target",
+            "Inventory and marketplace-finds tracking, later frozen with a note that Notion had become the source of truth",
+            "Generated HTML dashboards, a marketplace-finds view, and a wall calendar, with local serve scripts",
+            "A PDF plan for offline use"
+          ],
+          "why_it_matters": {
+            "text": "It is the closest thing in the portfolio to the actual shape of a forward-deployed engagement: an ambiguous real-world situation with hard external deadlines and a real budget, framed into workstreams, alternatives evaluated and rejected on the record, custom tooling built for the one workstream that needed it, a documented replan when the assumptions moved, and the artifacts left behind in a form the operator could keep using. No code was shipped and that is the point.",
+            "provenance": "drafted"
+          }
+        },
+        {
+          "id": "vra-automation",
+          "name": "Vendor Risk Document-Comparison Automation",
+          "order": 4,
+          "tagline": "Diagnosed the wrong retrieval primitive, then productized the fix so non-engineers could run it",
+          "status": "reported built and productized",
+          "period": "2026-05",
+          "domain": "Compliance automation / AI tooling",
+          "problem_statement": {
+            "text": "A baseline set of documents needed systematic comparison against an update set, one pair at a time, repeatably, for vendor risk assessment work.",
+            "provenance": "reported",
+            "source": "Reconstructed by the author from chat history, Feb-Aug 2026, and supplied 2026-08-22. Not verifiable from files on this machine unless otherwise noted."
+          },
+          "the_diagnosis": {
+            "text": "The default similarity-based retrieval was the wrong primitive for the task. It pulls fragments from each document, so the model ends up comparing chunks rather than whole documents, and the resulting fidelity loss is invisible unless you go looking for it. Recognizing that before building is the whole story.",
+            "provenance": "reported",
+            "source": "Reconstructed by the author from chat history, Feb-Aug 2026, and supplied 2026-08-22. Not verifiable from files on this machine unless otherwise noted."
+          },
+          "what_was_built": {
+            "text": "Stage one, a Python script against the platform REST API that unpins the workspace for a clean slate, pins each document pair to bypass vector search and force deterministic full-document context, sends a structured comparison prompt returning JSON with added, removed, changed, and unchanged sections plus risk flags, and writes results incrementally to CSV. Stage two, the same capability packaged as a native agent skill: a three-file distribution with a manifest declaring setup arguments, a Node handler using progress streaming and returning a markdown summary table, and a README with platform-specific install paths. Accepts a CSV path or inline JSON, caps batch size, and cleans up pins after each run.",
+            "provenance": "reported",
+            "source": "Reconstructed by the author from chat history, Feb-Aug 2026, and supplied 2026-08-22. Not verifiable from files on this machine unless otherwise noted."
+          },
+          "why_it_matters": {
+            "text": "Two things, and the second is the rarer one. First, diagnosis before construction: the build starts by rejecting the obvious tool for a structural reason. Second, the script did not stay a script. Turning a personal fix into an installable package with a manifest, progress output, and install documentation is what converts an individual's solution into a team capability, and it is the difference between being fast and being scalable.",
+            "provenance": "drafted"
+          }
+        },
+        {
+          "id": "broosity-stack",
+          "name": "Local Inference Stack",
+          "order": 5,
+          "tagline": "Two owned rigs turned into a private inference environment, costed to the electricity bill",
+          "status": "reported designed and phased",
+          "period": "2026-04 to 2026-05",
+          "domain": "Infrastructure",
+          "problem_statement": {
+            "text": "Cloud inference is rate-limited, metered, and sends everything off-machine. Two capable machines were already sitting there.",
+            "provenance": "drafted"
+          },
+          "what_was_designed": {
+            "text": "A phased roadmap across Ollama, Open WebUI, ComfyUI, Tailscale, and Continue.dev on two existing rigs - an i9-13900KF with an RTX 4070, and a Xeon Gold 6242R with an RTX A4000, 96GB of RAM, and 20TB of storage - sharing a single network model store so weights are not duplicated.",
+            "provenance": "reported",
+            "source": "Reconstructed by the author from chat history, Feb-Aug 2026, and supplied 2026-08-22. Not verifiable from files on this machine unless otherwise noted."
+          },
+          "costed_honestly": {
+            "text": "Hardware $0, both rigs already owned. Software $0, entirely open source. Build time about three weeks of evenings, with phase one at three days yielding a working LLM server. Model weights 200-300GB against 20TB available. Electricity roughly $15-30 a month.",
+            "provenance": "reported",
+            "source": "Reconstructed by the author from chat history, Feb-Aug 2026, and supplied 2026-08-22. Not verifiable from files on this machine unless otherwise noted."
+          },
+          "success_criteria": {
+            "text": "Written as testable checkboxes rather than aspirations: sub-two-second first-token latency to Open WebUI from any Tailscale device; a local coder model handling editor autocomplete without touching cloud APIs for routine work; end-to-end local image-to-video generation; both rigs reading from one model share; and the Xeon surviving a reboot with the LLM server auto-starting.",
+            "provenance": "reported",
+            "source": "Reconstructed by the author from chat history, Feb-Aug 2026, and supplied 2026-08-22. Not verifiable from files on this machine unless otherwise noted."
+          },
+          "the_strategic_layer": {
+            "text": "A deliberate split between Claude Code for hard problems and local models for volume work - boilerplate, refactors, test generation - plus a documented path for the same ComfyUI pipelines to become production image processors for ListingLift, replacing or supplementing paid Replicate API calls. Personal infrastructure with a route to production cost savings.",
+            "provenance": "reported",
+            "source": "Reconstructed by the author from chat history, Feb-Aug 2026, and supplied 2026-08-22. Not verifiable from files on this machine unless otherwise noted."
+          }
+        },
+        {
+          "id": "team-ai-infra",
+          "name": "Team AI Infrastructure Evaluation",
+          "order": 6,
+          "tagline": "Scoped a self-hosted AI platform for a 24-person team, then argued against hosting it himself",
+          "status": "evaluated; recommendation delivered",
+          "period": "2026-05",
+          "domain": "Infrastructure evaluation / governance",
+          "problem_statement": {
+            "text": "Could a self-hosted AI assistant platform serve a 24-person work team - team-wide retrieval over shared documents plus agentic workflows - hosted at home for privacy?",
+            "provenance": "reported",
+            "source": "Reconstructed by the author from chat history, Feb-Aug 2026, and supplied 2026-08-22. Not verifiable from files on this machine unless otherwise noted."
+          },
+          "the_work": {
+            "text": "Evaluated remote access approaches - Tailscale, Cloudflare Tunnel, WireGuard, port forwarding - with a recommendation on the ease-versus-security tradeoff. Established that no self-hosted retrieval tool had native Microsoft Teams integration, and scoped the two viable build paths: a Power Automate flow against the platform API, or a proper Teams bot via Bot Framework, which would require Cloudflare Tunnel for a Microsoft-reachable endpoint. Compared Onyx for permission-aware team retrieval with multi-user SSO against n8n for agentic workflows, against the existing Microsoft 365, SharePoint, Teams, Monday.com, and Notion stack.",
+            "provenance": "reported",
+            "source": "Reconstructed by the author from chat history, Feb-Aug 2026, and supplied 2026-08-22. Not verifiable from files on this machine unless otherwise noted."
+          },
+          "the_decision": {
+            "text": "Hosting work-team data on a personal home server raised security, policy, and reliability concerns that the evaluation surfaced rather than routed around. The resolution split the two cases: the home stack for personal and non-sensitive experimentation, a company-sanctioned hosted instance for actual team use.",
+            "provenance": "reported",
+            "source": "Reconstructed by the author from chat history, Feb-Aug 2026, and supplied 2026-08-22. Not verifiable from files on this machine unless otherwise noted."
+          },
+          "why_it_matters": {
+            "text": "Standing up a home lab is common. Concluding that your own home lab should not hold the company's data, while wearing the security officer hat and having already done the integration work, is the harder and less fun call. It is also the one a services client needs made without being asked.",
+            "provenance": "drafted"
+          }
+        }
+      ]
+    },
+    "agents": {
+      "definition": "Persistent agents with their own interaction surfaces and state stores. Distinct from applications, which wait to be opened, and from systems, which run on a schedule.",
+      "count": 0,
+      "items": [],
+      "note": "No items yet. The intended occupant (Kip) is parked in `deferred` pending the author's input. Do not render an empty tier on the site; leave the slot in the information architecture."
+    }
+  },
+  "judgment_calls": {
+    "definition": "Not projects. Decisions and deliverables where the transferable evidence is the reasoning, not the artifact. The source document recommends these as the items that most resemble what a forward-deployed role actually is.",
+    "items": [
+      {
+        "id": "self-hosting-line",
+        "name": "Declining to host team data at home",
+        "period": "2026-05",
+        "text": "See the Team AI Infrastructure Evaluation in tier two. Listed separately because the transferable artifact is the decision, not the evaluation.",
+        "provenance": "reported"
+      },
+      {
+        "id": "element-diagnostics",
+        "name": "Compressing an unfamiliar expert domain in a week",
+        "period": "2026-06 to 2026-07",
+        "framing_note": "Not an AI infrastructure project. Include it framed as using AI to become genuinely useful in an unfamiliar expert domain fast. It is the most memorable item in the portfolio and the most human, which is exactly why it should be short and unembellished.",
+        "the_arc": {
+          "text": "Diagnosed active misfires (P0300, P0303, P0304) on a high-mileage engine, replaced plugs and coils, found oil in a spark plug well and traced it to a leaking valve cover tube seal.",
+          "provenance": "reported",
+          "source": "Reconstructed by the author from chat history, Feb-Aug 2026, and supplied 2026-08-22. Not verifiable from files on this machine unless otherwise noted."
+        },
+        "the_reasoning_that_mattered": {
+          "text": "A compression test returned 140/131/132/135 psi. Uniformly low but consistent - which rules out a localized head gasket breach between the two suspect cylinders. That is pattern analysis rather than parts-swapping, and it is the same move as diagnosing the retrieval primitive before building the comparison tool. In parallel, catalytic converter and oxygen sensor purchases were deliberately deferred until the misfire was confirmed resolved and readiness monitors completed, avoiding several hundred dollars of parts that might not have been needed.",
+          "provenance": "reported",
+          "source": "Reconstructed by the author from chat history, Feb-Aug 2026, and supplied 2026-08-22. Not verifiable from files on this machine unless otherwise noted."
+        },
+        "the_reframe": {
+          "text": "Quoted roughly $5,000 for a head gasket repair on a 250,000-mile engine, the analysis inverted it: the labor is nearly identical for a used engine swap, so the same money buys a reset engine rather than a rebuild around tired rings. Realistic market for the swap, $3,000-4,000, or $800-1,500 doing it yourself plus a hoist rental.",
+          "provenance": "reported",
+          "source": "Reconstructed by the author from chat history, Feb-Aug 2026, and supplied 2026-08-22. Not verifiable from files on this machine unless otherwise noted."
+        },
+        "the_lateral_move": {
+          "text": "Recognizing that a radiator replaced after a recent accident was a plausible root cause opened a different path entirely: preserve the parts as evidence, obtain a written shop diagnosis naming the cooling system, pursue the body shop's workmanship warranty, file a supplemental insurance claim, with small claims court as backstop.",
+          "provenance": "reported",
+          "source": "Reconstructed by the author from chat history, Feb-Aug 2026, and supplied 2026-08-22. Not verifiable from files on this machine unless otherwise noted."
+        },
+        "the_technical_bit": {
+          "text": "During the replacement search, VIN verification was run live against NHTSA's free vPIC API rather than paying for a report - confirming check digits to rule out tampering and pulling recall campaigns, which surfaced 11 open items on one candidate including Takata airbag inflators. Undercarriage photos on another candidate were assessed well enough to identify rot-through at body and frame seams and walk away.",
+          "provenance": "reported",
+          "source": "Reconstructed by the author from chat history, Feb-Aug 2026, and supplied 2026-08-22. Not verifiable from files on this machine unless otherwise noted."
+        }
+      }
+    ]
+  },
+  "deferred": {
+    "definition": "Parked by the author on 2026-08-22, to be added later. NOT part of the current portfolio. Do not render any of these on the site and do not count them in headline statistics.",
+    "instruction_for_site_build": "Skip this section entirely. It exists so the work is not lost and so the information architecture can leave room. See DEFERRED.md for the human-editable version.",
+    "items": [
+      {
+        "id": "kip",
+        "name": "Kip",
+        "intended_tier": "agents",
+        "status": "parked - awaiting author input",
+        "what_is_known": "An OpenClaw-based agent, connected to a Notion board and to Telegram as its interaction surface. Reported by the author 2026-08-22. No local repository or files were found on this machine.",
+        "why_it_matters": "Structurally different from everything else here. The applications wait to be opened; the systems run on a schedule; Kip is an always-on agent a human converses with, backed by a real state store. For a forward-deployed role at an AI services venture that is arguably the most relevant single artifact available.",
+        "what_is_needed": [
+          "What problem it was built to solve",
+          "What the Notion board actually holds and how Kip reads or writes it",
+          "What the Telegram surface is used for day to day",
+          "Whether it is still running",
+          "Any design notes, prompts, or configuration"
+        ],
+        "source_access": "Notion connector was available in the 2026-08-22 session but not used. GitHub or local files unknown.",
+        "provenance": "reported by author, unverified"
+      },
+      {
+        "id": "security-risk-assessment",
+        "name": "Security risk assessment",
+        "intended_tier": "judgment_calls",
+        "status": "withheld from this public repository",
+        "note": "Client- and employer-confidential. Parked pending a confidentiality decision by the author, who is the security officer for the organization involved. Full write-up held locally and deliberately not published here. Do not add detail to this repo without that decision.",
+        "provenance": "withheld"
+      },
+      {
+        "id": "contract-evaluation",
+        "name": "Contract evaluation project",
+        "intended_tier": "unknown - likely systems or judgment_calls",
+        "status": "parked - no information yet",
+        "what_is_known": "Mentioned by the author 2026-08-22. Nothing else. A search of Documents for contract, MSA, SOW, agreement, redline, and clause matches returned no files, so it is not on this machine under an obvious name.",
+        "what_is_needed": [
+          "What the evaluation was for and who it was for",
+          "Whether it was employer work or personal (this determines whether it has the same confidentiality problem as the security assessment)",
+          "What was built, if anything, versus what was analysed",
+          "Whether there is a scoring rubric involved - if so it joins the rubric-design theme, which is currently the strongest claim in the portfolio",
+          "Where the artifacts live"
+        ],
+        "provenance": "reported by author, no detail yet"
+      },
+      {
+        "id": "fable-poc",
+        "name": "Proof of concept built with Fable",
+        "intended_tier": "unknown - likely applications",
+        "status": "parked - no information yet",
+        "what_is_known": "Mentioned by the author 2026-08-22. A proof of concept built using Fable. Nothing else known.",
+        "why_it_may_matter": "Every other item in this portfolio uses Claude via Claude Code, the API, or a scheduled agent. A POC on a different model is the only evidence here of deliberate model selection across providers or tiers, which is a distinct and relevant signal for a role that involves choosing the right model for a client problem.",
+        "what_is_needed": [
+          "What it does and what problem it addressed",
+          "Why Fable specifically rather than the models used elsewhere",
+          "When it was built",
+          "Whether it still runs, and where the code lives",
+          "Whether it was ever compared against an alternative model on the same task"
+        ],
+        "provenance": "reported by author, no detail yet"
+      }
+    ]
+  }
+}
