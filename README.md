@@ -8,6 +8,8 @@ Each contributor keeps their own context documents in a folder under `context/`,
 context/
   paul-mcclintock/
     paul-mcclintock-OVERVIEW.md        <- start here
+    paul-mcclintock-cover-letter.md    <- the claims
+    paul-mcclintock-CV.md              <- background
     paul-mcclintock-portfolio.json     <- structured source of truth
     paul-mcclintock-VERIFY.md          <- what is verified vs. inferred
     paul-mcclintock-DEFERRED.md        <- parked items
@@ -32,4 +34,4 @@ Nested files (like case studies) do not need the prefix — the folder path alre
 
 **Keep a VERIFY file.** A single place listing what has not been confirmed is more useful than hedging inside every document.
 
-**Redact before publishing, not after.** This repository is **public**. Anything client-confidential, employer-confidential, or personal should be withheld or abstracted before it is committed — git history keeps what you push even if you delete the file afterwards. Paul's folder has one item withheld on these grounds, marked in place rather than silently omitted.
+**Redact before publishing, not after.** This repository is **public**. Anything client-confidential, employer-confidential, or personal should be withheld or abstracted before it is committed — git history keeps what you push even if you delete the file afterwards. Paul's folder has one item withheld on these grounds, marked in place rather than silently omitted, and contact details stripped from his CV and cover letter.

@@ -12,6 +12,8 @@ Source material for a personal portfolio web experience about Paul McClintock's 
 
 | File | What it is |
 |---|---|
+| `paul-mcclintock-CV.md` | CV submitted for this role, 19 Aug 2026 |
+| `paul-mcclintock-cover-letter.md` | Cover letter submitted for this role. **Read before the portfolio** — it makes the claims the portfolio substantiates. |
 | `paul-mcclintock-portfolio.json` | Structured data, organized into three tiers plus judgment calls. **Machine-readable source of truth.** |
 | `case-studies/applications/` | Eight narrative write-ups of the software projects |
 | `case-studies/systems/` | Six write-ups of the methodology, agents, and infrastructure |
