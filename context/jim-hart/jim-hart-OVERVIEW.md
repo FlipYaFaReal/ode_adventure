@@ -119,24 +119,25 @@ Jim compiled there. Descriptions are abstracted for this public repository; what
 **They are also, collectively, the most relevant material in the folder.**
 
 ### Professional — AI built for the employer
-1. **Lingo — Integration Brief.** An AI onboarding agent that walks a new tenant through a structured
-   conversation and produces enough context to auto-generate their integration formulas, without a
+1. **Integration Onboarding Agent.** An AI onboarding agent that walks a new tenant through a structured
+   conversation and produces enough context to auto-generate their integration mappings, without a
    consultant on the call. A Step framework over a subagent contract, with session management, a label
    cache, and a tool layer reading live platform metadata — and a documented mission constraining every
    technical decision: *no fabrication, defer to the consultant, privacy on sample data.* **The closest
    thing in either portfolio to what Ode actually does.**
-2. **AI Formula Copilot.** Strategy and plan, not code: a brief on how agentic tooling changes who builds
-   integrations, plus a 47-story, 7-epic breakdown and an end-to-end trace of the edit flow to ground it.
+2. **Integration Authoring Copilot.** Strategy and plan, not code: a brief on how agentic tooling changes
+   who builds integrations, plus a 47-story, 7-epic breakdown and an end-to-end trace of the edit flow.
    Frame the problem, argue the position, hand over something executable — that *is* the forward-deployed
    job.
-3. **Tier 3 Support Agent.** Investigates production bugs across a distributed microservice system, then
-   **writes what it learned back into a living knowledge base** so the next investigation starts further
-   along.
+3. **Production Support Investigation Agent.** Investigates production bugs across a distributed
+   microservice system, then **writes what it learned back into a living knowledge base** so the next
+   investigation starts further along.
 4. **AI-Assisted Platform Engineering.** 37 repositories carrying a `CLAUDE.md`; 13 with committed
    `.claude/` configuration; architecture documentation written so agents can navigate a system too large
    to hold in one head. Eight-plus parallel feature worktrees at once.
-5. **Milvus Contact Lookup** · **Omatic.PromptChain** · **Candlekeep** — vector matching as an alternative
-   to rule-based dedup, prompt chains as declarative config, and RDF/SPARQL ontology work.
+5. **Contact Matching Prototype** · **Prompt Chain Runner** · **Semantic Layer Prototype** — vector
+   matching as an alternative to rule-based dedup, prompt chains as declarative config, and RDF/SPARQL
+   ontology work.
 
 ### Practice — tooling built for himself and the team
 **Claude HQ** (Electron app for managing a Claude Code install) · **ai-agent-toolkit** (the team's shared
@@ -177,7 +178,7 @@ Electron desktop app taken to a React SPA on Azure Static Web Apps with a manage
 Storage for workspace content and Clerk at the gate — with the desktop original still in the repo. Most
 portfolios show a graveyard of restarts. This shows one system carried across a boundary.
 
-**4. The same instinct shows up in three places.** Waterdeep (personal), Lingo's Step-and-subagent
+**4. The same instinct shows up in three places.** Waterdeep (personal), the onboarding agent's Step-and-subagent
 architecture (work), and The Green Dragon's event-sourced agent visualisation (practice) are all attempts
 to make agent behaviour legible and governable rather than trusting it. That is a consistent engineering
 position, arrived at repeatedly, not a one-off.
@@ -223,9 +224,11 @@ a delivery engagement — is directly relevant evidence here.
   metrics are filesystem-only and must be labelled that way.
 - **The 13 work-machine projects have no metrics at all** and must never be given any. They are `quoted`,
   not `verified`, and they are excluded from every headline number.
-- **The work descriptions are already abstracted.** Do not reintroduce internal business figures, the
-  competitive-positioning argument, named customer connectors, or internal service names — even if Jim
-  mentions them in conversation. `VERIFY.md` lists what was removed and why.
+- **The work descriptions are already abstracted, and the project names are not the real ones.** The seven
+  professional-tier projects carry descriptive names chosen for this repository, not their internal
+  codenames. Do not reintroduce codenames, internal business figures, the competitive-positioning argument,
+  named customer connectors, or internal service names — even if Jim mentions them in conversation.
+  `VERIFY.md` lists what was removed and why.
 
 ---
 
@@ -235,7 +238,8 @@ This is the **public** copy, published to `github.com/FlipYaFaReal/ode_adventure
 
 Two redactions are applied:
 
-1. `VirtuousSync-JimHart` is withheld as employer-adjacent and excluded from every total.
+1. One employer-adjacent repository is withheld and excluded from every total. Neither its name nor the
+   third-party product it integrates with appears here.
 2. The AiVideoLab cluster is described by its engineering facts only, with no subject matter.
 
 Both are recorded in `jim-hart-VERIFY.md` rather than silently omitted.

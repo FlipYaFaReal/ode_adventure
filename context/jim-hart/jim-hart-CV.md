@@ -33,15 +33,15 @@ Provenance: career record `quoted` from LinkedIn; project figures `verified` fro
 
 - Applying AI, ontologies, knowledge graphs, vector databases and prompt chaining to build Omatic's future
   solutions.
-- **Lingo** — an AI onboarding agent that walks a new tenant through a structured conversation and produces
-  enough context to auto-generate their integration formulas, removing the consultant from the call.
+- **Integration Onboarding Agent** — walks a new tenant through a structured conversation and produces
+  enough context to auto-generate their integration mappings, removing the consultant from the call.
   Python, DSPy, FastAPI, Azure. Built to a documented mission: no fabrication, defer to the consultant,
   privacy on sample data.
-- **Tier 3 Support Agent** — investigates production bugs across a distributed microservice system, traces
-  root cause through service and schema documentation, and writes findings back into a living knowledge
-  base so each investigation makes the next faster.
-- **AI Formula Copilot** — strategic brief on how agentic tooling changes who builds integrations, with a
-  47-story, 7-epic engineering breakdown and an end-to-end technical trace to ground delivery.
+- **Production Support Investigation Agent** — investigates production bugs across a distributed
+  microservice system, traces root cause through service and schema documentation, and writes findings
+  back into a living knowledge base so each investigation makes the next faster.
+- **Integration Authoring Copilot** — strategic brief on how agentic tooling changes who builds
+  integrations, with a 47-story, 7-epic engineering breakdown and an end-to-end technical trace.
 - Platform worked agent-first: 37 repositories carrying agent instructions, 13 with committed
   configuration, and architecture documentation authored for agent consumption.
 - **ai-agent-toolkit** — generalised a personal Claude Code workflow into an installable plugin marketplace
