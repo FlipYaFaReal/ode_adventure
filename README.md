@@ -84,6 +84,10 @@ Nested files (like case studies) do not need the prefix — the folder path alre
 
 > **Three people, one team, shipped.**
 
+*Shipped* is the state of the team, not a tally of projects. The unit is already
+built, already working, and ready to deploy as a unit — you are not hiring three
+people and hoping they gel. **The team is the finished thing.**
+
 All three of us build. Deep coding experience across the group — any of us can
 take any of the three seats below, and we have.
 
