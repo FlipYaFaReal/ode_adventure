@@ -42,8 +42,6 @@ detail discredits the honest work next to it.
 
 Each contributor keeps their own context documents in a folder under `context/`, named for them. Files inside a person's folder are prefixed with that person's name, so a document still identifies its owner if it is downloaded, quoted, or fed to a model on its own.
 
-Each contributor keeps their own context documents in a folder under `context/`, named for them. Files inside a person's folder are prefixed with that person's name, so a document still identifies its owner if it is downloaded, quoted, or fed to a model on its own.
-
 ```
 context/
   jim-hart/
@@ -54,6 +52,7 @@ context/
     jim-hart-DEFERRED.md               <- parked items and open questions
     jim-hart-source-project-portfolio.md
     jim-hart-source-linkedin.md
+    jim-hart-mine.py                   <- regenerates every metric
     case-studies/
       applications/   systems/   agents/   judgment/
   paul-mcclintock/
@@ -91,7 +90,7 @@ Nested files (like case studies) do not need the prefix — the folder path alre
 
 ## What belongs here
 
-The premise of this route is that **the team is the asset**, which shapes the package. The premise of the route is that **the team is the asset**, so the package has to read as a pod rather than as several strong individuals filed next to each other. Two things follow:
+The premise of this route is that **the team is the asset**, so the package has to read as a pod rather than as several strong individuals filed next to each other. Two things follow:
 
 - **Position against your collaborators, not beside them.** Overlap is fine; unexplained overlap looks like nobody has worked out who does what.
 - **Show the working, not just the output.** The posting is under Engineering and describes forward-deployed work: ambiguous problems, real clients, decisions made with incomplete information. A case study explaining a hard trade-off is worth more than three listing features.
