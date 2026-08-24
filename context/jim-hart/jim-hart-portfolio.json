@@ -1,0 +1,1275 @@
+{
+  "meta": {
+    "owner": "Jim Hart",
+    "generated": "2026-08-24",
+    "purpose": "Source material for a team artifact supporting a Bring Your Own Engineering Team application to Ode with Anthropic, and for Jim's individual Staff Software Engineer application. Audience: Ode engineering and hiring panel.",
+    "generated_by": "Claude Code, from git history and the filesystem on the author's machine",
+    "provenance_legend": {
+      "verified": "Mined directly from git history or file contents on this machine. Trustworthy without review.",
+      "quoted": "Lifted verbatim or near-verbatim from a document the author wrote. Trustworthy.",
+      "drafted": "Written by Claude as analysis or inference. MUST be reviewed by the author before use in an interview or on a public site. See VERIFY.md.",
+      "reported": "Supplied by the author and not checkable against files on this machine. Treat as recollection rather than record."
+    },
+    "method": {
+      "scanned": "C:\\Code, 45 directories, 2026-08-24",
+      "counted": "Non-blank lines in hand-written source files only.",
+      "commits": "Reachable from the checked-out branch. Counting --all would add unmerged and dependabot branches and drift whenever refs are pruned.",
+      "excluded": "node_modules, build and publish output (dist, release, bin, obj, test-publish, win-unpacked), coverage reports, minified bundles, lockfiles, EF migrations, agent worktrees, and Electron's LICENSES.chromium.html.",
+      "vendored_clones": "Any nested .git below a project root was checked for authorship. Clones of third-party source (Npgsql and efcore.pg inside CampfireCrm) were dropped whole; the author's own sub-repositories were kept.",
+      "provenance": "verified"
+    },
+    "headline_stats": {
+      "projects": 34,
+      "commits": 1389,
+      "lines_of_code": 164418,
+      "spec_and_plan_documents": 198,
+      "markdown_documents": 307,
+      "active_working_days": 71,
+      "calendar_span": "2024-04-23 to 2026-08-23",
+      "active_days_by_year": {
+        "2024": 3,
+        "2025": 7,
+        "2026": 61
+      },
+      "languages": [
+        "TypeScript",
+        "C#",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Vue",
+        "SQL",
+        "Python",
+        "Java",
+        "PowerShell"
+      ],
+      "loc_by_language": {
+        "TypeScript": 81121,
+        "C#": 46249,
+        "JavaScript": 19634,
+        "HTML": 7327,
+        "CSS": 6485,
+        "Vue": 2366,
+        "SQL": 954,
+        "Python": 184,
+        "Java": 81,
+        "PowerShell": 17
+      },
+      "provenance": "verified",
+      "reconciliation": "Tier items sum to 163,884 lines. The remaining 534 belong to Foundation_bak, counted in the totals (13 commits, Apr-Jul 2024, the oldest history on the machine) but not presented as a portfolio item pending the question in VERIFY.md about whether it duplicates Foundation.",
+      "note": "Excludes one withheld employer-adjacent repository and the vendored third-party source described in meta.method. Commit totals include the author's own nested sub-repositories."
+    },
+    "sources": {
+      "primary": "Git history and the filesystem under C:\\Code, read 2026-08-24.",
+      "secondary": "jim-hart-source-project-portfolio.md and jim-hart-source-linkedin.md, both written by the author. Source of every tagline and of the career record.",
+      "work_machine": "AI_PORTFOLIO.md, compiled by the author on his work machine 2026-08-24 from source trees, dependency manifests and agent configuration there. Sole source for the professional and practice tiers. The document itself is held locally and is NOT committed to this public repository."
+    },
+    "published_to": "github.com/FlipYaFaReal/ode_adventure (public) as context/jim-hart/",
+    "redaction_note": "Public copy. One employer-adjacent repository is withheld and one project cluster is described by its engineering facts only. Both are recorded in jim-hart-VERIFY.md rather than silently omitted."
+  },
+  "tiers": {
+    "applications": {
+      "definition": "Products with a user, a data model and a deployment story.",
+      "count": 12,
+      "items": [
+        {
+          "id": "campfirecrm",
+          "name": "CampfireCrm",
+          "directory": "CampfireCrm",
+          "tagline": "A CRM for a biannual camping and overlanding event, replacing spreadsheets and email threads.",
+          "domain": "Events / CRM",
+          "status": "active",
+          "metrics": {
+            "lines_of_code": 33297,
+            "source_files": 349,
+            "loc_by_language": {
+              "TypeScript": 17645,
+              "C#": 12018,
+              "JavaScript": 1898,
+              "HTML": 1152,
+              "SQL": 380,
+              "CSS": 204
+            },
+            "markdown_documents": 61,
+            "spec_and_plan_documents": 55,
+            "provenance": "verified",
+            "commits": 361,
+            "first_commit": "2026-03-10",
+            "last_commit": "2026-08-23",
+            "active_days": 13,
+            "uncommitted_files": 2,
+            "commits_all_refs": 524,
+            "commits_note": "Default branch only. The higher all-refs figure includes unmerged and dependabot branches.",
+            "excluded_vendored_subtrees": [
+              "efcore.pg",
+              "npgsql"
+            ]
+          },
+          "tagline_provenance": "quoted",
+          "notes": "Largest and most sustained project on the machine. Split CI/CD pipelines deploy API and web app independently; an API client injects Clerk JWTs on every request.",
+          "notes_provenance": "drafted"
+        },
+        {
+          "id": "aivideolabfilms",
+          "name": "AiVideoLab Films",
+          "directory": "AiVideoLabFilms",
+          "tagline": "Backend and delivery surface for the media production toolchain.",
+          "domain": "Media production",
+          "status": "active",
+          "metrics": {
+            "lines_of_code": 28575,
+            "source_files": 299,
+            "loc_by_language": {
+              "C#": 15371,
+              "JavaScript": 9256,
+              "CSS": 2785,
+              "HTML": 1050,
+              "SQL": 113
+            },
+            "markdown_documents": 33,
+            "spec_and_plan_documents": 24,
+            "provenance": "verified",
+            "commits": 299,
+            "first_commit": "2026-05-20",
+            "last_commit": "2026-08-22",
+            "active_days": 14,
+            "uncommitted_files": 0,
+            "commits_all_refs": 304,
+            "commits_note": "Default branch only. The higher all-refs figure includes unmerged and dependabot branches."
+          },
+          "tagline_provenance": "quoted",
+          "directory_aliased": true,
+          "notes": "Second-largest codebase. C#-led with a separate design handoff directory.",
+          "notes_provenance": "drafted"
+        },
+        {
+          "id": "aivideolabstudio",
+          "name": "AiVideoLab Studio",
+          "directory": "AiVideoLabStudio",
+          "tagline": "Two-user web port of the AiVideoLab desktop application.",
+          "domain": "Media production",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 20577,
+            "source_files": 160,
+            "loc_by_language": {
+              "TypeScript": 13430,
+              "JavaScript": 4835,
+              "HTML": 2069,
+              "CSS": 226,
+              "PowerShell": 17
+            },
+            "markdown_documents": 27,
+            "spec_and_plan_documents": 24,
+            "provenance": "verified",
+            "commits": 175,
+            "first_commit": "2026-07-14",
+            "last_commit": "2026-08-01",
+            "active_days": 12,
+            "uncommitted_files": 0
+          },
+          "tagline_provenance": "quoted",
+          "directory_aliased": true,
+          "notes": "The desktop-to-cloud port: React + TypeScript SPA on Azure Static Web Apps with a managed Functions API, workspace content in Azure Blob Storage, access gated by Clerk.",
+          "notes_provenance": "drafted"
+        },
+        {
+          "id": "doratrack",
+          "name": "DoraTrack",
+          "directory": "DoraTrack",
+          "tagline": "SaaS for tracking and improving DORA metrics, benchmarked against Elite/High/Medium/Low bands.",
+          "domain": "Engineering analytics",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 18770,
+            "source_files": 260,
+            "loc_by_language": {
+              "TypeScript": 12190,
+              "C#": 5942,
+              "SQL": 429,
+              "CSS": 163,
+              "JavaScript": 33,
+              "HTML": 13
+            },
+            "markdown_documents": 17,
+            "spec_and_plan_documents": 3,
+            "provenance": "verified",
+            "commits": 0,
+            "git": "no repository on disk; metrics are filesystem-only",
+            "own_sub_repositories": [
+              "backend/ApplicationApi",
+              "frontend/doratrackweb"
+            ]
+          },
+          "tagline_provenance": "quoted",
+          "notes": "Organised as two of Jim's own sub-repositories rather than one; supports manual entry and automated ingestion through a REST API.",
+          "notes_provenance": "drafted"
+        },
+        {
+          "id": "talamar",
+          "name": "Talamar's Forgotten Tales",
+          "directory": "TalamarsForgottenTales",
+          "tagline": "Interactive branching-narrative story game where video and typed narration gate the choices.",
+          "domain": "Games / interactive fiction",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 13664,
+            "source_files": 211,
+            "loc_by_language": {
+              "TypeScript": 10182,
+              "C#": 3288,
+              "CSS": 155,
+              "JavaScript": 22,
+              "HTML": 17
+            },
+            "markdown_documents": 35,
+            "spec_and_plan_documents": 27,
+            "provenance": "verified",
+            "commits": 191,
+            "first_commit": "2026-01-27",
+            "last_commit": "2026-03-02",
+            "active_days": 18,
+            "uncommitted_files": 1,
+            "commits_all_refs": 192,
+            "commits_note": "Default branch only. The higher all-refs figure includes unmerged and dependabot branches."
+          },
+          "tagline_provenance": "quoted",
+          "notes": "Stories are pure data: a manifest of scene graphs with stat effects and requirement gates, so new stories ship without code changes. Player state runs through a typed reducer with an explicit status machine.",
+          "notes_provenance": "drafted"
+        },
+        {
+          "id": "aivideolab",
+          "name": "AiVideoLab",
+          "directory": "AiVideoLab",
+          "tagline": "Local-first Electron desktop tool for organising AI-assisted production projects.",
+          "domain": "Media production",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 11499,
+            "source_files": 94,
+            "loc_by_language": {
+              "TypeScript": 9859,
+              "CSS": 1612,
+              "JavaScript": 16,
+              "HTML": 12
+            },
+            "markdown_documents": 36,
+            "spec_and_plan_documents": 33,
+            "provenance": "verified",
+            "commits": 164,
+            "first_commit": "2026-05-06",
+            "last_commit": "2026-07-20",
+            "active_days": 7,
+            "uncommitted_files": 4,
+            "commits_all_refs": 165,
+            "commits_note": "Default branch only. The higher all-refs figure includes unmerged and dependabot branches."
+          },
+          "tagline_provenance": "quoted",
+          "directory_aliased": true,
+          "notes": "The desktop original that AiVideoLab Studio was ported from. Ships design-handoff canvases alongside the code.",
+          "notes_provenance": "drafted"
+        },
+        {
+          "id": "swipeforcause",
+          "name": "SwipeForCause",
+          "directory": "SwipeForCause",
+          "tagline": "A short-form vertical feed that reframes volunteer discovery as scrolling rather than searching.",
+          "domain": "Nonprofit / marketplace",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 8736,
+            "source_files": 99,
+            "loc_by_language": {
+              "C#": 4141,
+              "TypeScript": 3584,
+              "HTML": 943,
+              "SQL": 32,
+              "JavaScript": 27,
+              "CSS": 9
+            },
+            "markdown_documents": 20,
+            "spec_and_plan_documents": 10,
+            "provenance": "verified",
+            "commits": 64,
+            "first_commit": "2026-02-14",
+            "last_commit": "2026-02-18",
+            "active_days": 5,
+            "uncommitted_files": 9,
+            "commits_all_refs": 115,
+            "commits_note": "Default branch only. The higher all-refs figure includes unmerged and dependabot branches."
+          },
+          "tagline_provenance": "quoted",
+          "notes": "Five active days, 115 commits. Includes a standalone marketing landing page deployed separately from the app.",
+          "notes_provenance": "drafted"
+        },
+        {
+          "id": "combathelper",
+          "name": "CombatHelper",
+          "directory": "CombatHelper",
+          "tagline": "Warhammer 40k combat companion for an 11-inch touchscreen tablet.",
+          "domain": "Games / utility",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 7483,
+            "source_files": 85,
+            "loc_by_language": {
+              "TypeScript": 7307,
+              "CSS": 119,
+              "JavaScript": 34,
+              "HTML": 23
+            },
+            "markdown_documents": 7,
+            "spec_and_plan_documents": 1,
+            "provenance": "verified",
+            "commits": 19,
+            "first_commit": "2025-04-30",
+            "last_commit": "2025-05-05",
+            "active_days": 3,
+            "uncommitted_files": 1
+          },
+          "tagline_provenance": "quoted",
+          "notes": "Built with Lovable. The combat calculator is the default landing screen — side-by-side unit selectors, real-time results, minimal taps.",
+          "notes_provenance": "drafted"
+        },
+        {
+          "id": "huntr",
+          "name": "Huntr",
+          "directory": "Huntr",
+          "tagline": "Scavenger hunt platform packaged as a cross-platform app rather than a website.",
+          "domain": "Games / events",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 2968,
+            "source_files": 37,
+            "loc_by_language": {
+              "Vue": 2366,
+              "JavaScript": 273,
+              "TypeScript": 259,
+              "HTML": 50,
+              "CSS": 20
+            },
+            "markdown_documents": 1,
+            "spec_and_plan_documents": 0,
+            "provenance": "verified",
+            "commits": 0,
+            "git": "no repository on disk; metrics are filesystem-only"
+          },
+          "tagline_provenance": "quoted",
+          "notes": "The only Vue/Quasar codebase in the portfolio.",
+          "notes_provenance": "drafted"
+        },
+        {
+          "id": "ilmosh",
+          "name": "ILMOSH",
+          "directory": "ILMOSH",
+          "tagline": "Event planning and coordination for a recurring annual gathering.",
+          "domain": "Events",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 2911,
+            "source_files": 98,
+            "loc_by_language": {
+              "C#": 2911
+            },
+            "markdown_documents": 7,
+            "spec_and_plan_documents": 0,
+            "provenance": "verified",
+            "commits": 0,
+            "git": "no repository on disk; metrics are filesystem-only",
+            "own_sub_repositories": [
+              "Backend/Ilmosh.Api"
+            ]
+          },
+          "tagline_provenance": "quoted",
+          "notes": "Models events by year, participants, menu items, bar items, pantry items and a shared photo library.",
+          "notes_provenance": "drafted"
+        },
+        {
+          "id": "merrypicks",
+          "name": "MerryPicks",
+          "directory": "MerryPicks",
+          "tagline": "Secret Santa organiser that runs the draw so the organiser can participate fairly.",
+          "domain": "Seasonal / utility",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 1564,
+            "source_files": 42,
+            "loc_by_language": {
+              "C#": 833,
+              "TypeScript": 639,
+              "CSS": 40,
+              "JavaScript": 39,
+              "HTML": 13
+            },
+            "markdown_documents": 1,
+            "spec_and_plan_documents": 0,
+            "provenance": "verified",
+            "commits": 0,
+            "git": "no repository on disk; metrics are filesystem-only"
+          },
+          "tagline_provenance": "quoted"
+        },
+        {
+          "id": "aivideolabfilmslaunch",
+          "name": "AiVideoLab Films Launch",
+          "directory": "AiVideoLabFilmsLaunch",
+          "tagline": "Launch site for AiVideoLab Films, deployed separately from the product.",
+          "domain": "Marketing site",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 904,
+            "source_files": 14,
+            "loc_by_language": {
+              "CSS": 455,
+              "JavaScript": 424,
+              "HTML": 25
+            },
+            "markdown_documents": 5,
+            "spec_and_plan_documents": 5,
+            "provenance": "verified",
+            "commits": 36,
+            "first_commit": "2026-06-09",
+            "last_commit": "2026-07-10",
+            "active_days": 3,
+            "uncommitted_files": 0
+          },
+          "tagline_provenance": "quoted",
+          "directory_aliased": true
+        }
+      ]
+    },
+    "systems": {
+      "definition": "Repeatable machinery: methodology, templates and developer tooling that made the applications cheaper to build.",
+      "count": 4,
+      "items": [
+        {
+          "id": "hartstack",
+          "name": "HartStack CLI",
+          "directory": "HartStackCLI",
+          "tagline": "Scaffolding tool that generates production-ready full-stack SaaS projects in one command.",
+          "domain": "Developer tooling",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 1305,
+            "source_files": 18,
+            "loc_by_language": {
+              "JavaScript": 1273,
+              "TypeScript": 29,
+              "CSS": 3
+            },
+            "markdown_documents": 3,
+            "spec_and_plan_documents": 2,
+            "provenance": "verified",
+            "commits": 19,
+            "first_commit": "2026-03-10",
+            "last_commit": "2026-03-13",
+            "active_days": 2,
+            "uncommitted_files": 20
+          },
+          "tagline_provenance": "quoted",
+          "notes": "The scaffold command walks a Handlebars template tree, conditionally including files by filename prefix (__b2b__, __b2c__, __stripe__). The deploy command runs a six-step Azure provisioning flow: validate, create resources, configure secrets, update workflow files, set GitHub secrets, print summary.",
+          "notes_provenance": "drafted"
+        },
+        {
+          "id": "waterdeep",
+          "name": "Waterdeep — AI Software Factory",
+          "directory": "Waterdeep",
+          "tagline": "A system prompt that turns Claude into the orchestrator of an autonomous software factory.",
+          "domain": "AI engineering methodology",
+          "status": "in use",
+          "metrics": {
+            "lines_of_code": 1180,
+            "source_files": 20,
+            "loc_by_language": {
+              "JavaScript": 1167,
+              "HTML": 12,
+              "CSS": 1
+            },
+            "markdown_documents": 36,
+            "spec_and_plan_documents": 6,
+            "provenance": "verified",
+            "commits": 0,
+            "git": "no repository on disk; metrics are filesystem-only"
+          },
+          "tagline_provenance": "quoted",
+          "notes": "Forces a raw product idea through phased delivery with a panel of specialised expert agents, resolving ambiguity through the right expert before proceeding, and tracking everything in a living on-disk kanban system (WORKBOARD.md, DECISIONS.md, REQUIREMENTS.md, ARCHITECTURE.md, per-task files). Not an application: 36 markdown documents against 1,180 lines of code.",
+          "notes_provenance": "drafted"
+        },
+        {
+          "id": "foundation",
+          "name": "Foundation",
+          "directory": "Foundation",
+          "tagline": ".NET Web API template for multi-tenant SaaS backends, organised by vertical slice.",
+          "domain": "Architecture template",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 941,
+            "source_files": 38,
+            "loc_by_language": {
+              "TypeScript": 504,
+              "C#": 384,
+              "JavaScript": 39,
+              "HTML": 13,
+              "CSS": 1
+            },
+            "markdown_documents": 4,
+            "spec_and_plan_documents": 1,
+            "provenance": "verified",
+            "commits": 0,
+            "git": "no repository on disk; metrics are filesystem-only"
+          },
+          "tagline_provenance": "quoted",
+          "notes": "Each feature owns its controller, handlers and DTOs in a self-contained folder, with only minimal shared infrastructure — a deliberate answer to layered architectures drifting into tangle as they grow.",
+          "notes_provenance": "drafted"
+        },
+        {
+          "id": "jimhartdev",
+          "name": "jimhart.dev",
+          "directory": "JimHartDev",
+          "tagline": "One-page lead-generation site for an AI consulting practice.",
+          "domain": "Marketing site",
+          "status": "shipped",
+          "metrics": {
+            "lines_of_code": 838,
+            "source_files": 28,
+            "loc_by_language": {
+              "TypeScript": 782,
+              "CSS": 34,
+              "JavaScript": 22
+            },
+            "markdown_documents": 6,
+            "spec_and_plan_documents": 2,
+            "provenance": "verified",
+            "commits": 17,
+            "first_commit": "2026-07-09",
+            "last_commit": "2026-07-09",
+            "active_days": 1,
+            "uncommitted_files": 0
+          },
+          "tagline_provenance": "quoted",
+          "notes": "Built from a written design spec, statically exported, served from a CDN behind a CI gate that runs lint, typecheck and build before anything ships.",
+          "notes_provenance": "drafted"
+        }
+      ]
+    },
+    "agents": {
+      "definition": "Conversational and orchestration surfaces built directly against model APIs.",
+      "count": 2,
+      "items": [
+        {
+          "id": "jexi",
+          "name": "Jexi",
+          "directory": "Jexi",
+          "tagline": "Chatbot service built directly against Azure OpenAI with no intermediate framework.",
+          "domain": "Applied AI",
+          "status": "experiment",
+          "metrics": {
+            "lines_of_code": 59,
+            "source_files": 1,
+            "loc_by_language": {
+              "C#": 59
+            },
+            "markdown_documents": 0,
+            "spec_and_plan_documents": 0,
+            "provenance": "verified",
+            "commits": 0,
+            "git": "no repository on disk; metrics are filesystem-only"
+          },
+          "tagline_provenance": "quoted",
+          "notes": "Deliberately framework-free, to see what the raw SDK surface actually requires.",
+          "notes_provenance": "drafted"
+        },
+        {
+          "id": "navi",
+          "name": "Navi",
+          "directory": "Navi",
+          "tagline": "Conversational REPL assistant routing typed input through an orchestrator with persistent history.",
+          "domain": "Agent harness",
+          "status": "experiment",
+          "metrics": {
+            "lines_of_code": 47,
+            "source_files": 3,
+            "loc_by_language": {
+              "Python": 47
+            },
+            "markdown_documents": 0,
+            "spec_and_plan_documents": 0,
+            "provenance": "verified",
+            "commits": 0,
+            "git": "no repository on disk; metrics are filesystem-only"
+          },
+          "tagline_provenance": "quoted",
+          "notes": "A minimal harness for experimenting with agent orchestration outside a heavyweight framework.",
+          "notes_provenance": "drafted"
+        }
+      ]
+    },
+    "tools": {
+      "definition": "Single-purpose desktop and command-line utilities, mostly media and document processing.",
+      "count": 8,
+      "items": [
+        {
+          "id": "promptforge",
+          "name": "PromptForge Studio",
+          "directory": "PromptForgeStudio",
+          "tagline": "Desktop app for generating consistent AI text-to-image and image-to-video prompts.",
+          "domain": "Applied AI tooling",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 1844,
+            "source_files": 26,
+            "loc_by_language": {
+              "TypeScript": 1755,
+              "CSS": 41,
+              "JavaScript": 35,
+              "HTML": 13
+            },
+            "markdown_documents": 2,
+            "spec_and_plan_documents": 1,
+            "provenance": "verified",
+            "commits": 0,
+            "git": "no repository on disk; metrics are filesystem-only"
+          },
+          "tagline_provenance": "quoted",
+          "notes": "Addresses prompt drift: structured world-building plus enforced canonical phrasing, so the same character is described the same way in every clip and prompt generation becomes repeatable, reviewable and auditable.",
+          "notes_provenance": "drafted"
+        },
+        {
+          "id": "cliprenamer",
+          "name": "ClipRenamer",
+          "directory": "ClipRenamer",
+          "tagline": "Reviews and renames video clips by playing each file in place beside the rename field.",
+          "domain": "Media tooling",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 1272,
+            "source_files": 18,
+            "loc_by_language": {
+              "TypeScript": 1197,
+              "JavaScript": 39,
+              "CSS": 20,
+              "HTML": 16
+            },
+            "markdown_documents": 1,
+            "spec_and_plan_documents": 0,
+            "provenance": "verified",
+            "commits": 2,
+            "first_commit": "2026-06-29",
+            "last_commit": "2026-06-29",
+            "active_days": 1,
+            "uncommitted_files": 5
+          },
+          "tagline_provenance": "quoted",
+          "notes": "Includes a fix for the Windows EBUSY file lock that otherwise blocks renaming the video currently playing.",
+          "notes_provenance": "drafted"
+        },
+        {
+          "id": "videotrimmer",
+          "name": "VideoTrimmer (ClipForge)",
+          "directory": "VideoTrimmer",
+          "tagline": "Batch MP4 clipping tool that walks a folder in a Premiere-style timeline.",
+          "domain": "Media tooling",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 1229,
+            "source_files": 23,
+            "loc_by_language": {
+              "TypeScript": 903,
+              "CSS": 311,
+              "HTML": 15
+            },
+            "markdown_documents": 3,
+            "spec_and_plan_documents": 3,
+            "provenance": "verified",
+            "commits": 5,
+            "first_commit": "2026-03-01",
+            "last_commit": "2026-03-01",
+            "active_days": 1,
+            "uncommitted_files": 0
+          },
+          "tagline_provenance": "quoted",
+          "notes": "Set in and out points, save, and the next video loads automatically while processed files move themselves into a done/ subfolder.",
+          "notes_provenance": "drafted"
+        },
+        {
+          "id": "musicsorter",
+          "name": "MusicSorter",
+          "directory": "MusicSorter",
+          "tagline": "Triages large audio libraries into category folders by keyboard shortcut.",
+          "domain": "Media tooling",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 944,
+            "source_files": 20,
+            "loc_by_language": {
+              "TypeScript": 856,
+              "CSS": 40,
+              "JavaScript": 35,
+              "HTML": 13
+            },
+            "markdown_documents": 1,
+            "spec_and_plan_documents": 0,
+            "provenance": "verified",
+            "commits": 0,
+            "git": "no repository on disk; metrics are filesystem-only"
+          },
+          "tagline_provenance": "quoted"
+        },
+        {
+          "id": "wordtoepub",
+          "name": "WordToEpub",
+          "directory": "WordToEpub",
+          "tagline": "Converts Word documents into EPUB ebooks with a converted table of contents.",
+          "domain": "Document tooling",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 739,
+            "source_files": 5,
+            "loc_by_language": {
+              "C#": 739
+            },
+            "markdown_documents": 0,
+            "spec_and_plan_documents": 0,
+            "provenance": "verified",
+            "commits": 0,
+            "git": "no repository on disk; metrics are filesystem-only"
+          },
+          "tagline_provenance": "quoted"
+        },
+        {
+          "id": "videotranscripts",
+          "name": "VideoTranscripts",
+          "directory": "VideoTranscripts",
+          "tagline": "Batch video transcription running entirely locally.",
+          "domain": "Applied AI tooling",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 137,
+            "source_files": 2,
+            "loc_by_language": {
+              "Python": 137
+            },
+            "markdown_documents": 1,
+            "spec_and_plan_documents": 1,
+            "provenance": "verified",
+            "commits": 0,
+            "git": "no repository on disk; metrics are filesystem-only"
+          },
+          "tagline_provenance": "quoted",
+          "notes": "Auto-detects CUDA or CPU, uses voice-activity detection to skip silence, emits .txt and timestamped .srt, and handles errors per file so one bad video does not abort the batch.",
+          "notes_provenance": "drafted"
+        },
+        {
+          "id": "youtubetomp3",
+          "name": "youtube-to-mp3",
+          "directory": "youtube-to-mp3",
+          "tagline": "CLI that extracts audio from a YouTube URL, self-bootstrapping yt-dlp on first run.",
+          "domain": "Media tooling",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 93,
+            "source_files": 1,
+            "loc_by_language": {
+              "JavaScript": 93
+            },
+            "markdown_documents": 0,
+            "spec_and_plan_documents": 0,
+            "provenance": "verified",
+            "commits": 0,
+            "git": "no repository on disk; metrics are filesystem-only"
+          },
+          "tagline_provenance": "quoted"
+        },
+        {
+          "id": "pdftopng",
+          "name": "PDFtoPNG",
+          "directory": "PDFtoPNG",
+          "tagline": "Renders PDF pages to PNG images.",
+          "domain": "Document tooling",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 29,
+            "source_files": 1,
+            "loc_by_language": {
+              "C#": 29
+            },
+            "markdown_documents": 0,
+            "spec_and_plan_documents": 0,
+            "provenance": "verified",
+            "commits": 0,
+            "git": "no repository on disk; metrics are filesystem-only"
+          },
+          "tagline_provenance": "quoted"
+        }
+      ]
+    },
+    "experiments": {
+      "definition": "Small, self-contained builds where the point was to learn a technique.",
+      "count": 7,
+      "items": [
+        {
+          "id": "claudecode",
+          "name": "GPU Fluid Simulation",
+          "directory": "ClaudeCode",
+          "tagline": "Real-time GPU fluid dynamics rendered through hand-written GLSL shaders.",
+          "domain": "Experiment",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 814,
+            "source_files": 1,
+            "loc_by_language": {
+              "HTML": 814
+            },
+            "markdown_documents": 0,
+            "spec_and_plan_documents": 0,
+            "provenance": "verified",
+            "commits": 0,
+            "git": "no repository on disk; metrics are filesystem-only"
+          },
+          "tagline_provenance": "quoted",
+          "notes": "Single file, no libraries, no build step. Lives in the ClaudeCode directory on disk.",
+          "notes_provenance": "drafted"
+        },
+        {
+          "id": "commandcenter",
+          "name": "Command Center",
+          "directory": "CommandCenter",
+          "tagline": "Single-file personal dashboard homepage in a dark terminal style.",
+          "domain": "Experiment",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 511,
+            "source_files": 1,
+            "loc_by_language": {
+              "HTML": 511
+            },
+            "markdown_documents": 0,
+            "spec_and_plan_documents": 0,
+            "provenance": "verified",
+            "commits": 0,
+            "git": "no repository on disk; metrics are filesystem-only"
+          },
+          "tagline_provenance": "quoted"
+        },
+        {
+          "id": "rollingrespawn",
+          "name": "Rolling Respawn",
+          "directory": "rolling-respawn",
+          "tagline": "Companion site for a tabletop RPG campaign.",
+          "domain": "Experiment",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 507,
+            "source_files": 9,
+            "loc_by_language": {
+              "HTML": 413,
+              "CSS": 90,
+              "JavaScript": 4
+            },
+            "markdown_documents": 0,
+            "spec_and_plan_documents": 0,
+            "provenance": "verified",
+            "commits": 9,
+            "first_commit": "2025-02-23",
+            "last_commit": "2025-02-23",
+            "active_days": 1,
+            "uncommitted_files": 0
+          },
+          "tagline_provenance": "quoted"
+        },
+        {
+          "id": "aithingaweek",
+          "name": "AI Thing A Week",
+          "directory": "AI Thing A Week",
+          "tagline": "A year-long challenge to build and document something new with AI every week.",
+          "domain": "Experiment",
+          "status": "parked",
+          "metrics": {
+            "lines_of_code": 213,
+            "source_files": 3,
+            "loc_by_language": {
+              "HTML": 113,
+              "CSS": 100
+            },
+            "markdown_documents": 0,
+            "spec_and_plan_documents": 0,
+            "provenance": "verified",
+            "commits": 0,
+            "git": "no repository on disk; metrics are filesystem-only",
+            "own_sub_repositories": [
+              "Week 1 - this"
+            ]
+          },
+          "tagline_provenance": "quoted",
+          "notes": "The site itself was week one: the hub meant to host every subsequent project. Nothing beyond week one exists on disk.",
+          "notes_provenance": "drafted"
+        },
+        {
+          "id": "imagineclicker",
+          "name": "ImagineClicker",
+          "directory": "ImagineClicker",
+          "tagline": "Manifest V3 browser extension that automates repetitive clicking.",
+          "domain": "Experiment",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 153,
+            "source_files": 4,
+            "loc_by_language": {
+              "JavaScript": 70,
+              "CSS": 56,
+              "HTML": 27
+            },
+            "markdown_documents": 0,
+            "spec_and_plan_documents": 0,
+            "provenance": "verified",
+            "commits": 0,
+            "git": "no repository on disk; metrics are filesystem-only"
+          },
+          "tagline_provenance": "quoted"
+        },
+        {
+          "id": "coordhud",
+          "name": "CoordHud",
+          "directory": "minecraft-mod-whereami",
+          "tagline": "Minecraft client mod rendering player coordinates as a persistent HUD overlay.",
+          "domain": "Experiment",
+          "status": "built",
+          "metrics": {
+            "lines_of_code": 81,
+            "source_files": 2,
+            "loc_by_language": {
+              "Java": 81
+            },
+            "markdown_documents": 0,
+            "spec_and_plan_documents": 0,
+            "provenance": "verified",
+            "commits": 0,
+            "git": "no repository on disk; metrics are filesystem-only"
+          },
+          "tagline_provenance": "quoted"
+        },
+        {
+          "id": "supertank",
+          "name": "SuperTank",
+          "directory": "SuperTank",
+          "tagline": "Digital archaeology recovering a type-in program from the November 1984 COMPUTE!'s Gazette.",
+          "domain": "Experiment",
+          "status": "parked",
+          "metrics": {
+            "lines_of_code": 0,
+            "source_files": 0,
+            "loc_by_language": {},
+            "markdown_documents": 0,
+            "spec_and_plan_documents": 0,
+            "provenance": "verified",
+            "commits": 0,
+            "git": "no repository on disk; metrics are filesystem-only"
+          },
+          "tagline_provenance": "quoted",
+          "notes": "The source exists only as a scanned magazine, so the work is OCR and page-image extraction. No code on disk yet.",
+          "notes_provenance": "drafted"
+        }
+      ]
+    },
+    "professional": {
+      "definition": "AI work built for Jim's employer or its platform. On the work machine; not verifiable from this one.",
+      "count": 7,
+      "provenance": "quoted",
+      "abstraction_note": "Descriptions are abstracted for this public repository. Internal business figures, competitive positioning, named customer connectors and internal service topology are removed. See jim-hart-VERIFY.md.",
+      "items": [
+        {
+          "id": "lingo-integration-brief",
+          "name": "Lingo - Integration Brief",
+          "tagline": "An AI onboarding agent that walks a new tenant through a structured conversation and produces enough context to auto-generate their integration formulas, without a consultant on the call.",
+          "domain": "Applied AI product",
+          "status": "in flight",
+          "notes": "A Step framework over a subagent contract, with session management, a label cache, and a tool layer that reads live platform metadata. Ships with a documented mission constraining every technical decision: no fabrication, defer to the consultant, privacy on sample data. The clearest example in the portfolio of an agent built to a stated business case rather than as a demo, and the closest analogue to Ode's own work.",
+          "tech": [
+            "Python 3.11+",
+            "DSPy",
+            "FastAPI",
+            "Uvicorn",
+            "Azure Identity",
+            "Azure Blob Storage",
+            "Playwright",
+            "pytest",
+            "Docker"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        },
+        {
+          "id": "ai-formula-copilot",
+          "name": "AI Formula Copilot - product strategy and engineering plan",
+          "tagline": "Product and engineering work rather than code: a strategic brief on how agentic tooling changes who builds integrations, with the delivery plan to act on it.",
+          "domain": "Product strategy",
+          "status": "delivered",
+          "notes": "A 47-story, 7-epic engineering breakdown alongside an end-to-end technical trace of the mapping edit flow through the stack, written to ground the implementation rather than describe it abstractly. This is the item that most resembles a forward-deployed engagement: frame the problem, argue the position, then hand over something a team can execute.",
+          "tech": [
+            "Product strategy",
+            "architecture research",
+            "AI-assisted story generation"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        },
+        {
+          "id": "tier3-support-agent",
+          "name": "Tier 3 Support Agent",
+          "tagline": "A prompt-defined agent that investigates production bugs across a distributed microservice system and traces root cause through service and schema documentation.",
+          "domain": "Applied AI product",
+          "status": "built",
+          "notes": "The notable part is the loop: each investigation writes what it learned back into a living knowledge base, so the next one starts further along. The supporting documentation corpus was authored specifically as agent context rather than for human readers.",
+          "tech": [
+            ".NET",
+            "Azure Pipelines",
+            "prompt engineering",
+            "self-updating knowledge base"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        },
+        {
+          "id": "platform-engineering",
+          "name": "AI-Assisted Platform Engineering - the day job",
+          "tagline": "A large distributed platform worked agent-first, with the agent's context treated as maintained infrastructure.",
+          "domain": "Platform engineering",
+          "status": "ongoing",
+          "notes": "37 repositories carry a CLAUDE.md defining service-specific patterns, build commands and entry points; 13 carry committed .claude configuration. Root-level architecture documentation exists specifically so agents can navigate a system too large to hold in one head. Throughput pattern worth noting: eight or more parallel feature worktrees maintained simultaneously, a mode that only works when the agent carries context per branch. Individual repositories, services and customer connectors are deliberately not listed.",
+          "tech": [
+            ".NET",
+            "TypeScript",
+            "Temporal.io",
+            "Azure Functions",
+            "workflow DSL"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        },
+        {
+          "id": "milvus-contact-lookup",
+          "name": "Vector search - Milvus Contact Lookup",
+          "tagline": "A locally hosted vector database plus a service doing similarity search over contact data, exploring embedding-based record matching as an alternative to rule-based deduplication.",
+          "domain": "Applied AI research",
+          "status": "prototype",
+          "notes": "Diagnosis before construction: questioning whether the default matching primitive was the right one rather than optimising it.",
+          "tech": [
+            "Milvus",
+            "etcd",
+            "MinIO",
+            "Python",
+            "FastAPI",
+            "Pydantic"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        },
+        {
+          "id": "promptchain",
+          "name": "Omatic.PromptChain",
+          "tagline": "A YAML-defined prompt pipeline runner with a definition loader.",
+          "domain": "Applied AI tooling",
+          "status": "archived",
+          "notes": "Prompt chains as declarative configuration rather than code, an early move toward treating prompt composition as something to version and review.",
+          "tech": [
+            ".NET",
+            "YAML"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        },
+        {
+          "id": "candlekeep",
+          "name": "Candlekeep",
+          "tagline": "RDF and SPARQL ontology work building a semantic layer over platform data.",
+          "domain": "Knowledge representation",
+          "status": "archived",
+          "notes": "The on-disk counterpart to the ontology and knowledge-graph work named in Jim's current role.",
+          "tech": [
+            "RDF",
+            "SPARQL"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        }
+      ]
+    },
+    "practice": {
+      "definition": "Developer tooling and agent infrastructure Jim built for himself and his team. Work machine.",
+      "count": 6,
+      "provenance": "quoted",
+      "abstraction_note": "Descriptions are abstracted for this public repository. Internal business figures, competitive positioning, named customer connectors and internal service topology are removed. See jim-hart-VERIFY.md.",
+      "items": [
+        {
+          "id": "claude-hq",
+          "name": "Claude HQ",
+          "tagline": "An Electron desktop app for browsing, visualising and managing a Claude Code installation - sessions, projects, history, tasks, plans, commands, skills, plugins and settings.",
+          "domain": "Developer tooling",
+          "status": "built",
+          "notes": "Built against the actual on-disk structure rather than an idealised spec, with an IPC-as-API data layer, live file watching, Monaco-backed editors and usage visualisations. Design and implementation plan written before the build.",
+          "tech": [
+            "Electron",
+            "electron-vite",
+            "React",
+            "TypeScript",
+            "Zustand",
+            "TanStack Query",
+            "Monaco Editor",
+            "Radix UI",
+            "Tailwind",
+            "Recharts",
+            "dnd-kit",
+            "chokidar",
+            "Fuse.js"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        },
+        {
+          "id": "ai-agent-toolkit",
+          "name": "ai-agent-toolkit",
+          "tagline": "An internal Claude Code plugin marketplace for Jim's team, bundling shared slash commands and skills into a single installable plugin.",
+          "domain": "Team infrastructure",
+          "status": "in use",
+          "notes": "Nobody hand-copies files, and updates ship automatically as assets are added. The deliberate step from a personal workflow to shared team infrastructure, which is what a forward-deployed engagement has to leave behind.",
+          "tech": [
+            "Claude Code plugin marketplace",
+            "skills",
+            "slash commands",
+            "Markdown"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        },
+        {
+          "id": "team-process-toolkit",
+          "name": "Team Process Toolkit",
+          "tagline": "A CLI for engineering workflows - DORA metrics, release management, work item queries and team data sync - designed to be driven either from a terminal or by asking Claude in natural language.",
+          "domain": "Team infrastructure",
+          "status": "built",
+          "notes": "A local SQLite cache with a typed schema so the agent can query team history offline. Dual-surface by design: the same capability for a human and for an agent.",
+          "tech": [
+            "Node 20",
+            "TypeScript",
+            "Commander",
+            "Drizzle ORM",
+            "better-sqlite3",
+            "azure-devops-node-api",
+            "date-fns",
+            "Vitest",
+            "tsx"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        },
+        {
+          "id": "green-dragon",
+          "name": "The Green Dragon - Adventurer's Guild",
+          "tagline": "A desktop app that visualises AI coding agents as pixel-art adventurers living and working inside a fantasy guild hall, driven in real time by Claude Code hook events.",
+          "domain": "Developer tooling",
+          "status": "built",
+          "notes": "Notable for its engineering discipline as much as its whimsy: hexagonal architecture with domain, ports and services separated, an event-sourced session reducer, and unit tests on the core services. The spec is written for an AI coding agent as its primary reader.",
+          "tech": [
+            "Electron Forge",
+            "Vite",
+            "React",
+            "PixiJS",
+            "TypeScript",
+            "Zustand",
+            "Zod",
+            "Vitest",
+            "happy-dom",
+            "Testing Library"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        },
+        {
+          "id": "claude-environment",
+          "name": "Personal Claude Code environment",
+          "tagline": "The daily-driver agent setup the rest of this work runs on.",
+          "domain": "Agent infrastructure",
+          "status": "in use",
+          "notes": "11 custom skills, custom slash commands, session hooks, and 65 curated persistent memories across 15 project contexts - hard-won facts about API behaviour, platform quirks and tooling traps that stop the agent re-deriving them. Agent context maintained as an engineering artifact rather than as scratch.",
+          "tech": [
+            "Claude Code skills",
+            "hooks",
+            "slash commands",
+            "plugin marketplaces",
+            "file-based agent memory"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        },
+        {
+          "id": "navi-vault",
+          "name": "Navi - Personal Development Vault",
+          "tagline": "An Obsidian vault run as a personal AI assistant, with committed agent configuration.",
+          "domain": "Applied AI",
+          "status": "in use",
+          "notes": "PARA structure with daily check-ins, weekly reviews, a skills inventory and a people and meeting graph, all read and maintained by the agent. Distinct from the personal Navi REPL in the agents tier: same name, different project, different machine.",
+          "tech": [
+            "Obsidian",
+            "Markdown",
+            "Claude Code",
+            "PARA method"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        }
+      ]
+    }
+  }
+}
