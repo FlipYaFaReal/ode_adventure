@@ -27,9 +27,11 @@ NOT_A_PROJECT = {
     'npgsql-temp',          # clone of the Npgsql library
     'Auth0Quickstart',      # vendor sample
     'sample import', 'test', 'voice_clips', 'memory-bank-backup', '.claude',
-    'LaceLabAssets', 'UnchartedDesires-1.0-dists',
     'ode-adventure',
 }
+# Directories excluded by shape rather than by name, so no redacted name has to
+# appear in this file: asset stores hold media, not source, and *-dists hold builds.
+NOT_A_PROJECT_SUFFIX = ('Assets', '-dists', 'Desires')
 
 CODE_EXT = {
     '.cs': 'C#', '.ts': 'TypeScript', '.tsx': 'TypeScript', '.js': 'JavaScript',
@@ -107,7 +109,10 @@ def scan_fs(root):
 
 
 def scan_git(path):
-    log = run(['git', 'log', '--format=%an|%ad', '--date=short', '--all'], path)
+    # Count what is reachable from the checked-out branch, not --all: several repos
+    # carry a couple of dozen dependabot branches whose commits would inflate the
+    # totals and would drift every time refs are pruned.
+    log = run(['git', 'log', '--format=%an|%ad', '--date=short'], path)
     if log is None:
         return None
     lines = [l for l in log.strip().split('\n') if l.strip()]
@@ -122,8 +127,10 @@ def scan_git(path):
     dates.sort()
     status = run(['git', 'status', '--porcelain'], path) or ''
     subj = run(['git', 'log', '-1', '--format=%s'], path) or ''
-    first_subj = run(['git', 'log', '--reverse', '--format=%s', '--all'], path) or ''
+    first_subj = run(['git', 'log', '--reverse', '--format=%s'], path) or ''
+    allrefs = run(['git', 'rev-list', '--count', '--all'], path) or ''
     return dict(commits=len(lines), first_commit=dates[0], last_commit=dates[-1],
+                commits_all_refs=int(allrefs.strip() or 0),
                 active_days=len(set(dates)), authors=dict(authors),
                 uncommitted_files=len([s for s in status.split('\n') if s.strip()]),
                 last_commit_subject=subj.strip(),
@@ -134,6 +141,8 @@ results = {}
 for name in sorted(os.listdir(ROOT)):
     p = os.path.join(ROOT, name)
     if not os.path.isdir(p) or name in NOT_A_PROJECT or name.startswith('.'):
+        continue
+    if name.endswith(NOT_A_PROJECT_SUFFIX):
         continue
     sys.stderr.write(name + '\n')
     sys.stderr.flush()

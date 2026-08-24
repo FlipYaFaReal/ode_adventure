@@ -16,7 +16,7 @@ Director of Engineering and back to senior IC by choice. Currently Senior Staff 
 systems — ontologies, knowledge graphs, vector databases and prompt chaining — after leading a five-team,
 16-engineer organisation through an on-premises to cloud SaaS transformation.
 
-Outside work: 35 personal projects, 1,638 commits and 164,418 lines across TypeScript, C#, JavaScript, SQL,
+Outside work: 34 personal projects, 1,389 commits and 164,418 lines across TypeScript, C#, JavaScript, SQL,
 Python and Vue, built with Claude Code and other AI tooling. Full record in `jim-hart-portfolio.json`.
 
 Provenance: career record `quoted` from LinkedIn; project figures `verified` from disk.
@@ -88,13 +88,13 @@ software factory: a raw product idea forced through phased delivery with a panel
 agents, ambiguity resolved through the right expert before proceeding, everything tracked in an on-disk
 kanban. 36 markdown documents against 1,180 lines of code.
 
-**CampfireCrm.** 552 commits, 33,297 lines, 55 spec documents, still active. Full-stack CRM — React 18 +
+**CampfireCrm.** 361 commits, 33,297 lines, 55 spec documents, still active. Full-stack CRM — React 18 +
 TypeScript + Vite against a .NET Minimal API on PostgreSQL, Clerk auth with automatic JWT injection, split
 CI/CD pipelines deploying API and web app independently.
 
-**LaceLab → LaceLab Studio.** A complete architectural migration: local-first Electron desktop application
+**AiVideoLab → AiVideoLab Studio.** A complete architectural migration: local-first Electron desktop application
 ported to a React SPA on Azure Static Web Apps with a managed Functions API, workspace content in Blob
-Storage and access gated by Clerk. 680 commits across the cluster.
+Storage and access gated by Clerk. 674 commits across the cluster.
 
 **HartStack CLI.** One command scaffolds a production-ready full-stack SaaS project from a Handlebars
 template tree; a second runs a six-step Azure provisioning flow.

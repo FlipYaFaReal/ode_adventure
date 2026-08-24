@@ -44,8 +44,8 @@ verified metrics are done; the narrative is not.
 Suggested first five, by what carries the argument rather than by size:
 
 1. **Waterdeep** — the anchor, and the Paul parallel
-2. **LaceLab → LaceLab Studio** — the desktop-to-cloud port, abstracted
-3. **CampfireCrm** — the sustained one: 552 commits, 55 spec documents, still active
+2. **AiVideoLab → AiVideoLab Studio** — the desktop-to-cloud port, abstracted
+3. **CampfireCrm** — the sustained one: 361 commits, 55 spec documents, still active
 4. **PromptForge Studio** — consistency enforcement, which is an evals problem in disguise
 5. **HartStack CLI + Foundation** — one write-up: making the next project cheaper
 
@@ -84,6 +84,6 @@ LinkedIn.
 
 ## 5 · Withheld
 
-`VirtuousSync-JimHart` — 21 commits, 163 lines, Sep 2025 — is withheld as employer-adjacent and excluded
+`VirtuousSync-JimHart` — 9 commits, 163 lines, Sep 2025 — is withheld as employer-adjacent and excluded
 from every total. Recorded in `jim-hart-VERIFY.md`. No action needed unless Jim decides it is safe to
 include.

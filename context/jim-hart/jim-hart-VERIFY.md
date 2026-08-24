@@ -13,12 +13,19 @@ Mining run: `C:\Code`, 45 directories, 2026-08-24.
 
 # ⚠️ Redactions applied to this public copy
 
-**1. `VirtuousSync-JimHart` is withheld.** 21 commits, 163 lines, Sep 2025. Virtuous is a nonprofit CRM and
+**1. `VirtuousSync-JimHart` is withheld.** 9 commits, 163 lines, Sep 2025. Virtuous is a nonprofit CRM and
 this reads as employer- or client-adjacent. It is excluded from every total in `portfolio.json` and appears
 in no tier. Held locally only.
 
-**2. The LaceLab cluster is abstracted.** Four repositories — `LaceLab`, `LaceLabStudio`, `LaceLabFilms`,
-`LaceLabFilmsLaunch` — are described by their engineering facts only: Electron desktop, the Azure Static Web
+**2. The AiVideoLab cluster is abstracted and renamed.** `AiVideoLab` is an **alias**. The four
+repositories carry a different name on disk; the real names appear nowhere in this repository, and the
+alias map is held locally alongside the build script. `jim-hart-mine.py` excludes the cluster's asset
+directory by shape (`*Assets`) rather than by name so that no redacted string has to appear in a committed
+file. **If these documents are regenerated, the alias map has to be applied again** — the mining script
+alone will produce the real names.
+
+The four repositories — `AiVideoLab`, `AiVideoLabStudio`, `AiVideoLabFilms`,
+`AiVideoLabFilmsLaunch` — are described by their engineering facts only: Electron desktop, the Azure Static Web
 Apps + Functions + Blob Storage + Clerk port, the design-handoff canvases, and the commit and line counts.
 **No subject matter is described anywhere in these documents.** Keep it that way. A sibling directory,
 `UnchartedDesires`, is excluded entirely.
@@ -39,7 +46,7 @@ reviewer catches it first:
   `efcore.pg` (Shay Rojansky, 127 commits). Counting them credited Jim with 247,456 lines in that project.
   **Real figure: 33,297.** Every nested `.git` is now checked for authorship — clones by other people are
   dropped whole, Jim's own sub-repositories are kept.
-- **Electron build output.** `ClipRenamer`, `PromptForgeStudio`, `MusicSorter` and `LaceLab` each ship a
+- **Electron build output.** `ClipRenamer`, `PromptForgeStudio`, `MusicSorter` and `AiVideoLab` each ship a
   `release/` directory containing Chromium's `LICENSES.chromium.html` — a single file of 164,000–270,000
   lines. `ClipRenamer` fell from **224,018 lines to 1,272.**
 - **Directories that are not Jim's projects.** `npgsql-temp` (87,770 lines) is a clone of the Npgsql
@@ -49,8 +56,22 @@ reviewer catches it first:
 `meta.method` in `portfolio.json` records the exclusion list. **Never quote a figure that did not come from
 that file.**
 
+## ✅ Commits were counted across every ref, and that inflated them
+**First reported:** 1,638 commits. **Actual:** 1,389.
+
+`git log --all` counts unmerged and bot branches. **CampfireCrm has 361 commits on `main` and 524 across
+all refs** — more than twenty dependabot branches account for most of the gap. SwipeForCause fell from 115
+to 64 on the same basis, and active days fell from 77 to 71.
+
+Counting is now limited to what is reachable from the checked-out branch. Two reasons: the all-refs figure
+overstates finished work, and it silently changes whenever refs are pruned — the count moved between two
+mining runs half an hour apart, which is how this was noticed. Where the difference matters, the item in
+`portfolio.json` carries a `commits_all_refs` field alongside `commits`, so nothing is hidden.
+
+**Every commit figure written before 2026-08-24 is superseded.**
+
 ## ✅ The source document omits the largest body of work
-`jim-hart-source-project-portfolio.md` does not mention the LaceLab cluster at all. It is **680 commits and
+`jim-hart-source-project-portfolio.md` does not mention the AiVideoLab cluster at all. It is **674 commits and
 61,555 lines** — larger than any other project on the machine, and the only place a complete
 desktop-to-cloud architectural migration exists. Now included, abstracted per the redaction above.
 
@@ -108,7 +129,7 @@ almost word for word. LinkedIn shows both roles as *"May 2019 – Present"* and 
 simultaneously, which is ambiguous. **Was it a choice, a reorganisation, or are you still doing both?**
 This is load-bearing for the whole pitch — if it was not a choice, the argument has to change.
 
-**8. "He ports rather than restarts."** Drawn from LaceLab → LaceLab Studio being the only complete
+**8. "He ports rather than restarts."** Drawn from AiVideoLab → AiVideoLab Studio being the only complete
 migration in the record. One instance is a data point, not a pattern. Defensible if you can name the reason
 you ported instead of rewriting.
 

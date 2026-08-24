@@ -27,12 +27,16 @@ Jim's individual application to
 
 ## How the numbers were produced
 
-`C:\Code` was scanned on 2026-08-24: 45 directories, of which 35 are real projects. Only non-blank lines in
+`C:\Code` was scanned on 2026-08-24: 45 directories, of which 34 are real projects. Only non-blank lines in
 hand-written source files are counted. Build and publish output, coverage reports, minified bundles,
 lockfiles, EF migrations and agent worktrees are excluded.
 
-Three corrections were applied during mining, and the first two mattered most:
+Four corrections were applied during mining. All four moved a number that had already been written down:
 
+0. **Commits counted across every ref.** `git log --all` includes unmerged and dependabot
+   branches — CampfireCrm has **361 commits on `main` and 524 across all refs**, more than twenty of the
+   difference being dependabot. Counting is now limited to what is reachable from the checked-out branch,
+   which also stops the totals drifting whenever refs are pruned.
 1. **Vendored third-party source.** `CampfireCrm` contains full clones of `Npgsql` and `efcore.pg`. A naive
    line count credited Jim with 247,456 lines there; the real figure is 33,297. Every nested `.git` below a
    project root is now checked for authorship — third-party clones are dropped whole, Jim's own
@@ -51,14 +55,14 @@ documents the method.
 
 ## Headline
 
-**35 projects · 1,638 commits · 164,418 lines · 198 spec and plan documents · 77 active days**
+**34 projects · 1,389 commits · 164,418 lines · 198 spec and plan documents · 71 active days**
 **TypeScript · C# · JavaScript · SQL · Python · Vue · Java**
 
 | Year | Active days |
 |---|---|
 | 2024 | 3 |
 | 2025 | 7 |
-| 2026 | 67 |
+| 2026 | 61 |
 
 Provenance: `verified`.
 
@@ -69,15 +73,15 @@ Products with a user, a data model and a deployment story.
 
 | Project | Domain | Commits | LOC | Note |
 |---|---|---|---|---|
-| CampfireCrm | Events / CRM | 552 | 33,297 | Largest and still active. 55 spec documents. |
-| LaceLab Films | Media production | 304 | 28,575 | Still active. |
-| LaceLab Studio | Media production | 175 | 20,577 | The desktop→cloud port. |
+| CampfireCrm | Events / CRM | 361 | 33,297 | Largest and still active. 55 spec documents. |
+| AiVideoLab Films | Media production | 299 | 28,575 | Still active. |
+| AiVideoLab Studio | Media production | 175 | 20,577 | The desktop→cloud port. |
 | DoraTrack | Engineering analytics | — | 18,770 | No root repo; two of Jim's own sub-repos. |
-| Talamar's Forgotten Tales | Interactive fiction | 192 | 13,664 | Stories are pure data. |
-| LaceLab | Media production | 165 | 11,499 | The Electron original. |
-| SwipeForCause | Nonprofit marketplace | 115 | 8,736 | Five days. |
+| Talamar's Forgotten Tales | Interactive fiction | 191 | 13,664 | Stories are pure data. |
+| AiVideoLab | Media production | 164 | 11,499 | The Electron original. |
+| SwipeForCause | Nonprofit marketplace | 64 | 8,736 | Five days. |
 | CombatHelper | Games / utility | 19 | 7,483 | Built with Lovable. |
-| Huntr · ILMOSH · MerryPicks · LaceLab Films Launch | — | — | — | Smaller builds. |
+| Huntr · ILMOSH · MerryPicks · AiVideoLab Films Launch | — | — | — | Smaller builds. |
 
 ### Tier 2 — Systems (4)
 Repeatable machinery. **More relevant to this role than most of the applications.**
@@ -114,12 +118,12 @@ comfortable owning end-to-end technical outcomes but specifically want to contin
 individual contributors and spend more time in the code."* He did not have to be recruited into that
 position; he was already standing in it.
 
-**2. The spec-to-code ratio is the signal.** 198 spec and plan documents across 35 projects. Waterdeep has 36
+**2. The spec-to-code ratio is the signal.** 198 spec and plan documents across 34 projects. Waterdeep has 36
 markdown files and 1,180 lines of code. This is someone who writes the requirement down before writing the
 code — which is Ode's stated engineering philosophy, *"applying standard software engineering discipline to
 the non-deterministic world of frontier AI."*
 
-**3. He ports rather than restarts.** LaceLab is the only complete architectural migration in the record: an
+**3. He ports rather than restarts.** AiVideoLab is the only complete architectural migration in the record: an
 Electron desktop app taken to a React SPA on Azure Static Web Apps with a managed Functions API, Blob
 Storage for workspace content and Clerk at the gate — with the desktop original still in the repo. Most
 portfolios show a graveyard of restarts. This shows one system carried across a boundary.
@@ -159,7 +163,7 @@ a delivery engagement — is directly relevant evidence here.
 - **Use 164,418, never the raw scan.** If a number cannot be traced to `portfolio.json`, it does not ship.
 - **Tier 3 is thin and should be described as thin.** Two small experiments. Paul's agents tier is empty;
   overselling Jim's does not fix that.
-- **LaceLab is described by its engineering facts only** — Electron→Azure port, Clerk, Blob Storage, the
+- **AiVideoLab is described by its engineering facts only** — Electron→Azure port, Clerk, Blob Storage, the
   design-handoff canvases. No subject matter.
 - **DoraTrack, PromptForge Studio, MusicSorter, Waterdeep and Foundation have no git repository.** Their
   metrics are filesystem-only and must be labelled that way.
@@ -173,6 +177,6 @@ This is the **public** copy, published to `github.com/FlipYaFaReal/ode_adventure
 Two redactions are applied:
 
 1. `VirtuousSync-JimHart` is withheld as employer-adjacent and excluded from every total.
-2. The LaceLab cluster is described by its engineering facts only, with no subject matter.
+2. The AiVideoLab cluster is described by its engineering facts only, with no subject matter.
 
 Both are recorded in `jim-hart-VERIFY.md` rather than silently omitted.

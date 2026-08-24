@@ -13,22 +13,23 @@
     "method": {
       "scanned": "C:\\Code, 45 directories, 2026-08-24",
       "counted": "Non-blank lines in hand-written source files only.",
+      "commits": "Reachable from the checked-out branch. Counting --all would add unmerged and dependabot branches and drift whenever refs are pruned.",
       "excluded": "node_modules, build and publish output (dist, release, bin, obj, test-publish, win-unpacked), coverage reports, minified bundles, lockfiles, EF migrations, agent worktrees, and Electron's LICENSES.chromium.html.",
       "vendored_clones": "Any nested .git below a project root was checked for authorship. Clones of third-party source (Npgsql and efcore.pg inside CampfireCrm) were dropped whole; the author's own sub-repositories were kept.",
       "provenance": "verified"
     },
     "headline_stats": {
-      "projects": 35,
-      "commits": 1638,
+      "projects": 34,
+      "commits": 1389,
       "lines_of_code": 164418,
       "spec_and_plan_documents": 198,
-      "markdown_documents": 308,
-      "active_working_days": 77,
+      "markdown_documents": 307,
+      "active_working_days": 71,
       "calendar_span": "2024-04-23 to 2026-08-23",
       "active_days_by_year": {
         "2024": 3,
         "2025": 7,
-        "2026": 67
+        "2026": 61
       },
       "languages": [
         "TypeScript",
@@ -55,8 +56,8 @@
         "PowerShell": 17
       },
       "provenance": "verified",
-      "note": "Excludes one withheld employer-adjacent repository and the vendored third-party source described in meta.method. Commit totals include the author's own nested sub-repositories.",
-      "reconciliation": "Tier items sum to 163,884 lines. The remaining 534 belong to Foundation_bak, which is counted in the totals (13 commits, Apr-Jul 2024, the oldest history on the machine) but is not presented as a portfolio item pending the question in VERIFY.md about whether it duplicates Foundation."
+      "reconciliation": "Tier items sum to 163,884 lines. The remaining 534 belong to Foundation_bak, counted in the totals (13 commits, Apr-Jul 2024, the oldest history on the machine) but not presented as a portfolio item pending the question in VERIFY.md about whether it duplicates Foundation.",
+      "note": "Excludes one withheld employer-adjacent repository and the vendored third-party source described in meta.method. Commit totals include the author's own nested sub-repositories."
     },
     "sources": {
       "primary": "Git history and the filesystem under C:\\Code, read 2026-08-24.",
@@ -91,11 +92,13 @@
             "markdown_documents": 61,
             "spec_and_plan_documents": 55,
             "provenance": "verified",
-            "commits": 552,
+            "commits": 361,
             "first_commit": "2026-03-10",
             "last_commit": "2026-08-23",
-            "active_days": 19,
+            "active_days": 13,
             "uncommitted_files": 2,
+            "commits_all_refs": 524,
+            "commits_note": "Default branch only. The higher all-refs figure includes unmerged and dependabot branches.",
             "excluded_vendored_subtrees": [
               "efcore.pg",
               "npgsql"
@@ -106,9 +109,9 @@
           "notes_provenance": "drafted"
         },
         {
-          "id": "lacelabfilms",
-          "name": "LaceLab Films",
-          "directory": "LaceLabFilms",
+          "id": "aivideolabfilms",
+          "name": "AiVideoLab Films",
+          "directory": "AiVideoLabFilms",
           "tagline": "Backend and delivery surface for the media production toolchain.",
           "domain": "Media production",
           "status": "active",
@@ -125,21 +128,24 @@
             "markdown_documents": 33,
             "spec_and_plan_documents": 24,
             "provenance": "verified",
-            "commits": 304,
+            "commits": 299,
             "first_commit": "2026-05-20",
             "last_commit": "2026-08-22",
             "active_days": 14,
-            "uncommitted_files": 0
+            "uncommitted_files": 0,
+            "commits_all_refs": 304,
+            "commits_note": "Default branch only. The higher all-refs figure includes unmerged and dependabot branches."
           },
           "tagline_provenance": "quoted",
+          "directory_aliased": true,
           "notes": "Second-largest codebase. C#-led with a separate design handoff directory.",
           "notes_provenance": "drafted"
         },
         {
-          "id": "lacelabstudio",
-          "name": "LaceLab Studio",
-          "directory": "LaceLabStudio",
-          "tagline": "Two-user web port of the LaceLab desktop application.",
+          "id": "aivideolabstudio",
+          "name": "AiVideoLab Studio",
+          "directory": "AiVideoLabStudio",
+          "tagline": "Two-user web port of the AiVideoLab desktop application.",
           "domain": "Media production",
           "status": "built",
           "metrics": {
@@ -162,6 +168,7 @@
             "uncommitted_files": 0
           },
           "tagline_provenance": "quoted",
+          "directory_aliased": true,
           "notes": "The desktop-to-cloud port: React + TypeScript SPA on Azure Static Web Apps with a managed Functions API, workspace content in Azure Blob Storage, access gated by Clerk.",
           "notes_provenance": "drafted"
         },
@@ -217,20 +224,22 @@
             "markdown_documents": 35,
             "spec_and_plan_documents": 27,
             "provenance": "verified",
-            "commits": 192,
+            "commits": 191,
             "first_commit": "2026-01-27",
             "last_commit": "2026-03-02",
             "active_days": 18,
-            "uncommitted_files": 1
+            "uncommitted_files": 1,
+            "commits_all_refs": 192,
+            "commits_note": "Default branch only. The higher all-refs figure includes unmerged and dependabot branches."
           },
           "tagline_provenance": "quoted",
           "notes": "Stories are pure data: a manifest of scene graphs with stat effects and requirement gates, so new stories ship without code changes. Player state runs through a typed reducer with an explicit status machine.",
           "notes_provenance": "drafted"
         },
         {
-          "id": "lacelab",
-          "name": "LaceLab",
-          "directory": "LaceLab",
+          "id": "aivideolab",
+          "name": "AiVideoLab",
+          "directory": "AiVideoLab",
           "tagline": "Local-first Electron desktop tool for organising AI-assisted production projects.",
           "domain": "Media production",
           "status": "built",
@@ -246,14 +255,17 @@
             "markdown_documents": 36,
             "spec_and_plan_documents": 33,
             "provenance": "verified",
-            "commits": 165,
+            "commits": 164,
             "first_commit": "2026-05-06",
             "last_commit": "2026-07-20",
             "active_days": 7,
-            "uncommitted_files": 4
+            "uncommitted_files": 4,
+            "commits_all_refs": 165,
+            "commits_note": "Default branch only. The higher all-refs figure includes unmerged and dependabot branches."
           },
           "tagline_provenance": "quoted",
-          "notes": "The desktop original that LaceLab Studio was ported from. Ships design-handoff canvases alongside the code.",
+          "directory_aliased": true,
+          "notes": "The desktop original that AiVideoLab Studio was ported from. Ships design-handoff canvases alongside the code.",
           "notes_provenance": "drafted"
         },
         {
@@ -277,11 +289,13 @@
             "markdown_documents": 20,
             "spec_and_plan_documents": 10,
             "provenance": "verified",
-            "commits": 115,
+            "commits": 64,
             "first_commit": "2026-02-14",
             "last_commit": "2026-02-18",
             "active_days": 5,
-            "uncommitted_files": 9
+            "uncommitted_files": 9,
+            "commits_all_refs": 115,
+            "commits_note": "Default branch only. The higher all-refs figure includes unmerged and dependabot branches."
           },
           "tagline_provenance": "quoted",
           "notes": "Five active days, 115 commits. Includes a standalone marketing landing page deployed separately from the app.",
@@ -395,10 +409,10 @@
           "tagline_provenance": "quoted"
         },
         {
-          "id": "lacelabfilmslaunch",
-          "name": "LaceLab Films Launch",
-          "directory": "LaceLabFilmsLaunch",
-          "tagline": "Launch site for LaceLab Films, deployed separately from the product.",
+          "id": "aivideolabfilmslaunch",
+          "name": "AiVideoLab Films Launch",
+          "directory": "AiVideoLabFilmsLaunch",
+          "tagline": "Launch site for AiVideoLab Films, deployed separately from the product.",
           "domain": "Marketing site",
           "status": "built",
           "metrics": {
@@ -418,7 +432,8 @@
             "active_days": 3,
             "uncommitted_files": 0
           },
-          "tagline_provenance": "quoted"
+          "tagline_provenance": "quoted",
+          "directory_aliased": true
         }
       ]
     },
