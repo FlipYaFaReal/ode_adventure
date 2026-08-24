@@ -46,6 +46,16 @@ Each contributor keeps their own context documents in a folder under `context/`,
 
 ```
 context/
+  jim-hart/
+    jim-hart-OVERVIEW.md               <- start here
+    jim-hart-CV.md                     <- background
+    jim-hart-portfolio.json            <- structured source of truth
+    jim-hart-VERIFY.md                 <- what is verified vs. inferred
+    jim-hart-DEFERRED.md               <- parked items and open questions
+    jim-hart-source-project-portfolio.md
+    jim-hart-source-linkedin.md
+    case-studies/
+      applications/   systems/   agents/   judgment/
   paul-mcclintock/
     paul-mcclintock-OVERVIEW.md        <- start here
     paul-mcclintock-cover-letter.md    <- the claims
@@ -56,7 +66,6 @@ context/
     paul-mcclintock-source-ai-journey.md
     case-studies/
       applications/   systems/   judgment/
-  <second-contributor>/
   <third-contributor>/
 ```
 
