@@ -80,6 +80,37 @@ Nested files (like case studies) do not need the prefix — the folder path alre
 
 **Redact before publishing, not after.** This repository is **public**. Anything client-confidential, employer-confidential, or personal should be withheld or abstracted before it is committed — git history keeps what you push even if you delete the file afterwards. Paul's folder has one item withheld on these grounds, marked in place rather than silently omitted, and contact details stripped from his CV and cover letter.
 
+## The team
+
+> **Three people, one team, shipped.**
+
+All three of us build. Deep coding experience across the group — any of us can
+take any of the three seats below, and we have.
+
+What makes us a *team* rather than three capable people is that we run as an
+**empowered product team triumvirate** (Marty Cagan / SVPG): product management,
+design, and technology sitting together and owning an outcome, not a backlog.
+
+| | Seat | Why them |
+|---|---|---|
+| **Paul McClintock** | Product management | Turning fuzzy goals into problems worth solving, and deciding what not to build |
+| **Daryl Thornton** | Design | Making the result something a person will actually use |
+| **Jim Hart** | Technology | Leads AI at his company; makes it real |
+
+The seats are where each of our strengths express best as a team — not a
+statement about what any of us can do.
+
+**Why this shape suits forward-deployed work.** Clients arrive with ambitious,
+often fuzzy goals. That is a discovery problem before it is an engineering
+problem: someone has to turn the goal into a crisp problem statement, someone has
+to make the answer usable, and someone has to make it real and keep it running.
+A pod of three engineers routes the first two of those somewhere else. This one
+does not.
+
+We are currently building together in this repository — an adventure-themed
+project, early and in progress. It is here on purpose: **a team that already
+works is the thing being assessed, and a repo mid-build is the evidence.**
+
 ## What belongs here
 
 The premise of this route is that **the team is the asset**, which shapes the package. The premise of the route is that **the team is the asset**, so the package has to read as a pod rather than as several strong individuals filed next to each other. Two things follow:
