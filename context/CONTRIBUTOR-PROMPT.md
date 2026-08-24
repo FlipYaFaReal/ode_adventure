@@ -17,6 +17,14 @@ with me interactively: **interview me first, write files second.** Do not draft
 my portfolio from assumptions — you do not know what I have built, and guessing
 is the one failure that would sink this.
 
+**IF YOU ARE ALREADY CONNECTED TO THIS REPOSITORY**
+
+Then you were probably sent here by the README rather than pasted into a chat.
+Two adjustments: read `context/paul-mcclintock/` first to see the shape and depth
+expected, and when you write, open a **pull request** rather than committing to
+`main` — a contributor should get to read their own section before it lands. If
+you have no write access, output the files with their full paths and say so.
+
 **THE CONTEXT**
 
 Ode with Anthropic is Anthropic's services venture — they take frontier AI into
