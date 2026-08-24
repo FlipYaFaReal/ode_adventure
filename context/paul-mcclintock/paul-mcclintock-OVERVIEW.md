@@ -4,7 +4,11 @@
 
 Source material for a personal portfolio web experience about Paul McClintock's personal AI work, Feb–Aug 2026.
 
-**Primary audience:** the hiring manager for [Forward Deployed Product Manager @ Ode with Anthropic](https://jobs.ashbyhq.com/odewithanthropic/d93607e0-3e38-4a6f-a05e-f293d3f3bdf4) (SF/NY, $200–275K).
+**Primary audience:** the interview panel for [Bring Your Own Engineering Team @ Ode with Anthropic](https://jobs.ashbyhq.com/odewithanthropic/5e655487-e0f9-4471-96fd-355b1f5e0185) — a team application, not an individual one.
+
+*These documents were originally written for the [Forward Deployed Product Manager](https://jobs.ashbyhq.com/odewithanthropic/d93607e0-3e38-4a6f-a05e-f293d3f3bdf4) role (SF/NY, $200–275K) and the CV and cover letter are kept as submitted, unedited — they are a record. The framing below is the current one. Where the two disagree, this section governs.*
+
+**What changed, and why it matters for reading this.** BYOT sits under **Engineering** and is assessed against *"the same bar we hold every Ode engineer to."* So the question this material should answer is not "is Paul a strong product leader" but **"is this a pod that can be dropped into a client engagement and ship."** Read the six systems write-ups before the eight applications: the applications show software that was built, while the systems show the machinery that built it — a multi-agent development workflow, an autonomous job-hunt agent that commits its own audit log, a relocation run as a delivery engagement. **That machinery is the closer analogue to forward-deployed work**, and it is the part that is mine specifically rather than the industry's.
 
 ---
 
