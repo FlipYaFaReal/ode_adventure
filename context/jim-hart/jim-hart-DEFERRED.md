@@ -43,8 +43,9 @@ verified metrics are done; the narrative is not.
 
 Suggested first five, by what carries the argument rather than by size:
 
-1. **Lingo** — an AI agent shipped against a real business problem. The most Ode-shaped thing Jim has.
-2. **Tier 3 Support Agent** — the self-improving knowledge base loop
+1. **Integration Onboarding Agent** — an AI agent shipped against a real business problem. The most
+   Ode-shaped thing Jim has.
+2. **Production Support Investigation Agent** — the self-improving knowledge base loop
 3. **Waterdeep** — the anchor of the personal work, and the Paul parallel
 4. **ai-agent-toolkit + Personal Claude Code environment** — one write-up: agent context as engineered,
    shared infrastructure
@@ -82,10 +83,11 @@ What is needed, and only Jim and Paul can supply it:
 **Was:** Jim's Omatic work is the most relevant AI engineering experience he has, and none of it was in
 this repository.
 
-**Now:** 13 work-machine projects were added as the `professional` and `practice` tiers - Lingo, the AI
-Formula Copilot plan, the Tier 3 Support Agent, the platform engineering practice, Milvus contact lookup,
-Omatic.PromptChain, Candlekeep, Claude HQ, ai-agent-toolkit, Team Process Toolkit, The Green Dragon, the
-personal Claude Code environment, and the Navi development vault.
+**Now:** 13 work-machine projects were added as the `professional` and `practice` tiers - the Integration
+Onboarding Agent, the Integration Authoring Copilot plan, the Production Support Investigation Agent, the
+platform engineering practice, the contact matching prototype, the Prompt Chain Runner, the Semantic Layer
+Prototype, Claude HQ, ai-agent-toolkit, Team Process Toolkit, The Green Dragon, the personal Claude Code
+environment, and the Navi development vault.
 
 They are abstracted for public publication and carry no metrics. The source document stays on the work
 machine. `jim-hart-VERIFY.md` lists exactly what was removed.
@@ -96,11 +98,12 @@ machine. `jim-hart-VERIFY.md` lists exactly what was removed.
   configuration, 11 skills, 65 memories, 15 contexts. Load-bearing, and from a single scan.
 - **Decide what is discussable in an interview.** The write-ups describe approach and contribution, not
   code. Be ready for the question, and do not show source.
-- **Case studies for Lingo and the Tier 3 agent** are the two most valuable narrative pieces available,
-  and more relevant than any of the personal applications.
+- **Case studies for the Integration Onboarding Agent and the production support agent** are the two most
+  valuable narrative pieces available, and more relevant than any of the personal applications.
 
 ## 5 · Withheld
 
-`VirtuousSync-JimHart` — 9 commits, 163 lines, Sep 2025 — is withheld as employer-adjacent and excluded
-from every total. Recorded in `jim-hart-VERIFY.md`. No action needed unless Jim decides it is safe to
-include.
+One employer-adjacent repository — 9 commits, 163 lines, Sep 2025 — is withheld and excluded from every
+total. Its name, and the third-party product it integrates with, are held locally and
+appear nowhere in this repository. Recorded in `jim-hart-VERIFY.md`. No action needed unless Jim decides it
+is safe to include.

@@ -13,22 +13,25 @@ Mining run: `C:\Code`, 45 directories, 2026-08-24.
 
 # ⚠️ Redactions applied to this public copy
 
-**1. `VirtuousSync-JimHart` is withheld.** 9 commits, 163 lines, Sep 2025. Virtuous is a nonprofit CRM and
-this reads as employer- or client-adjacent. It is excluded from every total in `portfolio.json` and appears
-in no tier. Held locally only.
+**1. One employer-adjacent repository is withheld.** 9 commits, 163 lines, Sep 2025. It is named for the
+third-party product it integrates with, which makes both the repository name and the integration target
+employer- or client-adjacent, so neither appears anywhere in this repository. It is excluded from every
+total in `portfolio.json` and appears in no tier. Held locally only, alongside the alias map.
 
 **2. The AiVideoLab cluster is abstracted and renamed.** `AiVideoLab` is an **alias**. The four
 repositories carry a different name on disk; the real names appear nowhere in this repository, and the
 alias map is held locally alongside the build script. `jim-hart-mine.py` excludes the cluster's asset
-directory by shape (`*Assets`) rather than by name so that no redacted string has to appear in a committed
-file. **If these documents are regenerated, the alias map has to be applied again** — the mining script
-alone will produce the real names.
+directory by shape (`*Assets`), and reads any exclusion whose own name is redacted from
+`mine-local-excludes.txt` — untracked, and listed in `.gitignore` — so that no redacted string appears in a
+committed file. **If these documents are regenerated, the alias map has to be applied again and that local
+file has to be present** — the mining script alone will produce the real names, and will readmit the
+excluded sibling.
 
 The four repositories — `AiVideoLab`, `AiVideoLabStudio`, `AiVideoLabFilms`,
 `AiVideoLabFilmsLaunch` — are described by their engineering facts only: Electron desktop, the Azure Static Web
 Apps + Functions + Blob Storage + Clerk port, the design-handoff canvases, and the commit and line counts.
-**No subject matter is described anywhere in these documents.** Keep it that way. A sibling directory,
-`UnchartedDesires`, is excluded entirely.
+**No subject matter is described anywhere in these documents.** Keep it that way. A fifth sibling
+directory in the same cluster is excluded entirely; like the alias map, its name is held locally.
 
 **3. The 13 work-machine projects are abstracted, and their source document is not committed.**
 `AI_PORTFOLIO.md` was compiled by Jim on his work computer and is the sole source for the `professional`
@@ -39,10 +42,14 @@ documents:
 | Removed | Why |
 |---|---|
 | The onboarding-duration figure and the statement about what drives implementation cost | Internal business metrics about a private company's operations |
-| The competitive argument in the Formula Copilot brief - that customers will soon build integrations with agents outside the platform | Internal strategic positioning |
+| The competitive argument in the integration-authoring brief - that customers will soon build integrations with agents outside the platform | Internal strategic positioning |
 | Named customer connectors and their API-audit detail | Names third parties and the depth of work done against their systems |
 | Internal service topology - gateway, backend and transform service names, database schema documentation, the count of platform service repositories | Internal architecture |
 | Specific custom skill names tied to internal workflows | Reveals internal process |
+| **Internal project codenames**, replaced with descriptive names — the onboarding agent, the integration-authoring copilot, the production support agent, the contact matching prototype, the prompt chain runner, the semantic layer prototype | Names an employer's internal and unreleased projects. The descriptive names are this repository's own, not the employer's |
+
+The codename mapping is held locally with the alias map. **Anything generated from these documents must
+use the descriptive names**; if Jim uses a codename in conversation, do not write it back in.
 
 **Kept**, because they describe Jim's practice rather than his employer's business: the count of
 repositories carrying agent instructions, the counts of skills and curated memories, the parallel-worktree
@@ -135,9 +142,8 @@ small correction. **Which is it?**
 
 **5. `SuperTank` contains no source.**
 Zero counted lines. It is described as OCR and page-image extraction work, which may well be real but
-produced no code. It sits in the experiments tier marked `parked`. (`UnchartedDesires` also holds no
-counted source, but it is excluded from the portfolio entirely under the redaction above and appears in no
-tier.)
+produced no code. It sits in the experiments tier marked `parked`. (The excluded sibling directory named in
+redaction 2 also holds no counted source, and appears in no tier.)
 
 **6. GPU Fluid Simulation lives in a directory called `ClaudeCode`.**
 814 lines of HTML. The write-up describes a WebGL/GLSL fluid simulation. Assumed to be the same artifact —
@@ -180,10 +186,11 @@ in the mined tiers, and the JSON marks each item `"provenance": "unverifiable"` 
 machine. `Navi - Personal Development Vault` in the practice tier is an Obsidian PARA vault on the work
 machine. **They are unrelated.** Anything generated from this data must not merge them.
 
-**12. Employment status of the work items is unstated.** Lingo, the Tier 3 agent, the Formula Copilot work
-and the platform engineering are all employer work product. The portfolio describes Jim's contribution and
-approach, which is normal for a CV, but he should be ready for the obvious interview question about what
-he can and cannot discuss - and should not show code from any of it.
+**12. Employment status of the work items is unstated.** The onboarding agent, the production support
+agent, the integration-authoring work and the platform engineering are all employer work product. The
+portfolio describes Jim's contribution and approach, which is normal for a CV, but he should be ready for
+the obvious interview question about what he can and cannot discuss - and should not show code from any of
+it.
 
 ## Facts nobody has checked
 

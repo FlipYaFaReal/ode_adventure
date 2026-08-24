@@ -31,7 +31,18 @@ NOT_A_PROJECT = {
 }
 # Directories excluded by shape rather than by name, so no redacted name has to
 # appear in this file: asset stores hold media, not source, and *-dists hold builds.
-NOT_A_PROJECT_SUFFIX = ('Assets', '-dists', 'Desires')
+NOT_A_PROJECT_SUFFIX = ('Assets', '-dists')
+
+# Exclusions whose names are themselves redacted are read from an untracked file
+# beside this script, one suffix per line. If it is missing, the redacted cluster
+# is readmitted -- the same caveat as the alias map, which also has to be applied
+# by hand after a regeneration. See jim-hart-VERIFY.md.
+_LOCAL_EXCLUDES = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                               'mine-local-excludes.txt')
+if os.path.exists(_LOCAL_EXCLUDES):
+    with io.open(_LOCAL_EXCLUDES, encoding='utf-8') as _fh:
+        NOT_A_PROJECT_SUFFIX += tuple(ln.strip() for ln in _fh
+                                      if ln.strip() and not ln.startswith('#'))
 
 CODE_EXT = {
     '.cs': 'C#', '.ts': 'TypeScript', '.tsx': 'TypeScript', '.js': 'JavaScript',

@@ -978,9 +978,9 @@
       "abstraction_note": "Descriptions are abstracted for this public repository. Internal business figures, competitive positioning, named customer connectors and internal service topology are removed. See jim-hart-VERIFY.md.",
       "items": [
         {
-          "id": "lingo-integration-brief",
-          "name": "Lingo - Integration Brief",
-          "tagline": "An AI onboarding agent that walks a new tenant through a structured conversation and produces enough context to auto-generate their integration formulas, without a consultant on the call.",
+          "id": "integration-onboarding-agent",
+          "name": "Integration Onboarding Agent",
+          "tagline": "An AI onboarding agent that walks a new tenant through a structured conversation and produces enough context to auto-generate their integration mappings, without a consultant on the call.",
           "domain": "Applied AI product",
           "status": "in flight",
           "notes": "A Step framework over a subagent contract, with session management, a label cache, and a tool layer that reads live platform metadata. Ships with a documented mission constraining every technical decision: no fabrication, defer to the consultant, privacy on sample data. The clearest example in the portfolio of an agent built to a stated business case rather than as a demo, and the closest analogue to Ode's own work.",
@@ -1003,8 +1003,8 @@
           "abstracted": true
         },
         {
-          "id": "ai-formula-copilot",
-          "name": "AI Formula Copilot - product strategy and engineering plan",
+          "id": "integration-authoring-copilot",
+          "name": "Integration Authoring Copilot - product strategy and engineering plan",
           "tagline": "Product and engineering work rather than code: a strategic brief on how agentic tooling changes who builds integrations, with the delivery plan to act on it.",
           "domain": "Product strategy",
           "status": "delivered",
@@ -1022,8 +1022,8 @@
           "abstracted": true
         },
         {
-          "id": "tier3-support-agent",
-          "name": "Tier 3 Support Agent",
+          "id": "production-support-agent",
+          "name": "Production Support Investigation Agent",
           "tagline": "A prompt-defined agent that investigates production bugs across a distributed microservice system and traces root cause through service and schema documentation.",
           "domain": "Applied AI product",
           "status": "built",
@@ -1063,8 +1063,8 @@
           "abstracted": true
         },
         {
-          "id": "milvus-contact-lookup",
-          "name": "Vector search - Milvus Contact Lookup",
+          "id": "contact-matching-prototype",
+          "name": "Vector Search - Contact Matching Prototype",
           "tagline": "A locally hosted vector database plus a service doing similarity search over contact data, exploring embedding-based record matching as an alternative to rule-based deduplication.",
           "domain": "Applied AI research",
           "status": "prototype",
@@ -1085,8 +1085,8 @@
           "abstracted": true
         },
         {
-          "id": "promptchain",
-          "name": "Omatic.PromptChain",
+          "id": "prompt-chain-runner",
+          "name": "Prompt Chain Runner",
           "tagline": "A YAML-defined prompt pipeline runner with a definition loader.",
           "domain": "Applied AI tooling",
           "status": "archived",
@@ -1103,8 +1103,8 @@
           "abstracted": true
         },
         {
-          "id": "candlekeep",
-          "name": "Candlekeep",
+          "id": "semantic-layer-prototype",
+          "name": "Semantic Layer Prototype",
           "tagline": "RDF and SPARQL ontology work building a semantic layer over platform data.",
           "domain": "Knowledge representation",
           "status": "archived",

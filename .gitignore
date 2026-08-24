@@ -1,0 +1,5 @@
+# Local-only material that must not reach this public repository.
+# See context/jim-hart/jim-hart-VERIFY.md for what is redacted and why.
+context/jim-hart/mine-local-excludes.txt
+context/jim-hart/AI_PORTFOLIO.md
+__pycache__/
