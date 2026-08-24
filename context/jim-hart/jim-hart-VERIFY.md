@@ -30,7 +30,29 @@ Apps + Functions + Blob Storage + Clerk port, the design-handoff canvases, and t
 **No subject matter is described anywhere in these documents.** Keep it that way. A sibling directory,
 `UnchartedDesires`, is excluded entirely.
 
-Both are marked here rather than silently omitted, per the repository convention.
+**3. The 13 work-machine projects are abstracted, and their source document is not committed.**
+`AI_PORTFOLIO.md` was compiled by Jim on his work computer and is the sole source for the `professional`
+and `practice` tiers. **The document itself is held locally and deliberately kept out of this public
+repository**, because it contains material that should not be published. Removed on the way into these
+documents:
+
+| Removed | Why |
+|---|---|
+| The onboarding-duration figure and the statement about what drives implementation cost | Internal business metrics about a private company's operations |
+| The competitive argument in the Formula Copilot brief - that customers will soon build integrations with agents outside the platform | Internal strategic positioning |
+| Named customer connectors and their API-audit detail | Names third parties and the depth of work done against their systems |
+| Internal service topology - gateway, backend and transform service names, database schema documentation, the count of platform service repositories | Internal architecture |
+| Specific custom skill names tied to internal workflows | Reveals internal process |
+
+**Kept**, because they describe Jim's practice rather than his employer's business: the count of
+repositories carrying agent instructions, the counts of skills and curated memories, the parallel-worktree
+pattern, and every technology stack.
+
+**If Omatic has published any of the removed items, Jim can restore them individually.** The default is
+withhold, because git history keeps whatever is pushed. Nothing was silently dropped - everything removed
+is listed above.
+
+All three redactions are marked here rather than silently omitted, per the repository convention.
 
 ---
 
@@ -137,6 +159,31 @@ you ported instead of rewriting.
 is `verified` on both sides — his `systems/01-multi-agent-workflow.md`, your `Waterdeep/`. That neither knew
 about the other's is **`reported` and unconfirmed.** If you did discuss it first, the claim has to be
 softened, and it is the single strongest fact in the team argument — so get it right.
+
+## The work-machine tiers are a different class of evidence
+
+**10. Nothing in `professional` or `practice` was verified.** None of those 13 projects is on this machine -
+the work trees live elsewhere. Every description is `quoted` from Jim's own compiled document, which states
+it was itself built from on-disk evidence there. That is one remove further from the record than anything
+in the mined tiers, and the JSON marks each item `"provenance": "unverifiable"` in its metrics block.
+
+**Consequences to respect:**
+
+- They contribute **nothing** to the headline numbers. The 34 projects, 1,389 commits and 164,418 lines
+  describe personal work only. Do not add the work projects to those counts.
+- Do not invent metrics for them. There are no commit counts, no line counts, no dates.
+- If any of this is going in front of Ode, **Jim should re-verify the specifics on his work machine
+  first** - particularly the counts that were kept (37 repositories, 13 configurations, 11 skills, 65
+  memories, 15 contexts), since those are load-bearing and came from a single scan.
+
+**11. Two different projects are called Navi.** `Navi` in the agents tier is a 47-line Python REPL on this
+machine. `Navi - Personal Development Vault` in the practice tier is an Obsidian PARA vault on the work
+machine. **They are unrelated.** Anything generated from this data must not merge them.
+
+**12. Employment status of the work items is unstated.** Lingo, the Tier 3 agent, the Formula Copilot work
+and the platform engineering are all employer work product. The portfolio describes Jim's contribution and
+approach, which is normal for a CV, but he should be ready for the obvious interview question about what
+he can and cannot discuss - and should not show code from any of it.
 
 ## Facts nobody has checked
 

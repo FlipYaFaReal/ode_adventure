@@ -22,6 +22,7 @@ Jim's individual application to
 | `jim-hart-DEFERRED.md` | Parked items and open questions |
 | `jim-hart-source-project-portfolio.md` | Jim's own write-up of the projects. Source of every tagline. |
 | `jim-hart-source-linkedin.md` | Jim's LinkedIn export. Source of the career record. |
+| *(work portfolio)* | `AI_PORTFOLIO.md`, compiled on Jim's work machine. Source of the professional and practice tiers. **Held locally — deliberately not committed.** |
 | `jim-hart-mine.py` | The mining script. Re-run it to regenerate every metric. |
 | `case-studies/` | Narrative write-ups. **Empty — next pass.** |
 
@@ -66,7 +67,9 @@ documents the method.
 
 Provenance: `verified`.
 
-## The five tiers
+## The tiers
+
+Five tiers of personal work, mined and verified. Two tiers of work-machine projects that **could not be verified from this machine** and are held to a different standard — see the note below them.
 
 ### Tier 1 — Applications (12)
 Products with a user, a data model and a deployment story.
@@ -106,6 +109,47 @@ media-production costume.
 
 ---
 
+## The work machine — professional (7) and practice (6)
+
+**These 13 projects are on Jim's work computer. Nothing here was scanned, so there are no commit or line
+counts and none of it contributes to the headline numbers above.** Provenance is `quoted` from a document
+Jim compiled there. Descriptions are abstracted for this public repository; what was removed is listed in
+`VERIFY.md`.
+
+**They are also, collectively, the most relevant material in the folder.**
+
+### Professional — AI built for the employer
+1. **Lingo — Integration Brief.** An AI onboarding agent that walks a new tenant through a structured
+   conversation and produces enough context to auto-generate their integration formulas, without a
+   consultant on the call. A Step framework over a subagent contract, with session management, a label
+   cache, and a tool layer reading live platform metadata — and a documented mission constraining every
+   technical decision: *no fabrication, defer to the consultant, privacy on sample data.* **The closest
+   thing in either portfolio to what Ode actually does.**
+2. **AI Formula Copilot.** Strategy and plan, not code: a brief on how agentic tooling changes who builds
+   integrations, plus a 47-story, 7-epic breakdown and an end-to-end trace of the edit flow to ground it.
+   Frame the problem, argue the position, hand over something executable — that *is* the forward-deployed
+   job.
+3. **Tier 3 Support Agent.** Investigates production bugs across a distributed microservice system, then
+   **writes what it learned back into a living knowledge base** so the next investigation starts further
+   along.
+4. **AI-Assisted Platform Engineering.** 37 repositories carrying a `CLAUDE.md`; 13 with committed
+   `.claude/` configuration; architecture documentation written so agents can navigate a system too large
+   to hold in one head. Eight-plus parallel feature worktrees at once.
+5. **Milvus Contact Lookup** · **Omatic.PromptChain** · **Candlekeep** — vector matching as an alternative
+   to rule-based dedup, prompt chains as declarative config, and RDF/SPARQL ontology work.
+
+### Practice — tooling built for himself and the team
+**Claude HQ** (Electron app for managing a Claude Code install) · **ai-agent-toolkit** (the team's shared
+plugin marketplace) · **Team Process Toolkit** (a CLI drivable by human *or* agent) · **The Green Dragon**
+(agents as pixel-art adventurers, on hexagonal architecture with an event-sourced reducer) · **Personal
+Claude Code environment** (11 skills, 65 curated memories, 15 project contexts) · **Navi — Personal
+Development Vault** (an Obsidian PARA vault the agent maintains).
+
+> **Name collision:** this Navi is not the Navi in the agents tier. Different project, different machine,
+> same name. Do not merge them.
+
+---
+
 ## The argument
 
 Not *"here are 35 projects."* Volume is the least interesting thing in the record.
@@ -118,7 +162,12 @@ comfortable owning end-to-end technical outcomes but specifically want to contin
 individual contributors and spend more time in the code."* He did not have to be recruited into that
 position; he was already standing in it.
 
-**2. The spec-to-code ratio is the signal.** 198 spec and plan documents across 34 projects. Waterdeep has 36
+**2. Context is engineered, not scratch.** 198 spec and plan documents across 34 personal projects — and
+at work, 37 repositories carrying agent instructions, 13 with committed configuration, 11 custom skills and
+65 curated memories across 15 project contexts. Ode says they *"curate durable data sets"* and ship things
+that *"keep working long after we've handed it over."* `ai-agent-toolkit` is that exact move: a personal
+workflow deliberately generalised into installable team infrastructure so nobody hand-copies files.
+Separately, the spec-to-code ratio in the personal work says the same thing. Waterdeep has 36
 markdown files and 1,180 lines of code. This is someone who writes the requirement down before writing the
 code — which is Ode's stated engineering philosophy, *"applying standard software engineering discipline to
 the non-deterministic world of frontier AI."*
@@ -128,7 +177,12 @@ Electron desktop app taken to a React SPA on Azure Static Web Apps with a manage
 Storage for workspace content and Clerk at the gate — with the desktop original still in the repo. Most
 portfolios show a graveyard of restarts. This shows one system carried across a boundary.
 
-**4. Jim and Paul independently built the same thing.** Waterdeep and Paul's Multi-Agent Software Development
+**4. The same instinct shows up in three places.** Waterdeep (personal), Lingo's Step-and-subagent
+architecture (work), and The Green Dragon's event-sourced agent visualisation (practice) are all attempts
+to make agent behaviour legible and governable rather than trusting it. That is a consistent engineering
+position, arrived at repeatedly, not a one-off.
+
+**5. Jim and Paul independently built the same thing.** Waterdeep and Paul's Multi-Agent Software Development
 Workflow are both simulated product organisations that force an idea through a requirements panel, an
 architecture phase and a reviewed implementation loop, tracked in on-disk state. Neither knew the other was
 building it. **For a Bring Your Own Team application this is the strongest single fact available** — it is
@@ -167,6 +221,11 @@ a delivery engagement — is directly relevant evidence here.
   design-handoff canvases. No subject matter.
 - **DoraTrack, PromptForge Studio, MusicSorter, Waterdeep and Foundation have no git repository.** Their
   metrics are filesystem-only and must be labelled that way.
+- **The 13 work-machine projects have no metrics at all** and must never be given any. They are `quoted`,
+  not `verified`, and they are excluded from every headline number.
+- **The work descriptions are already abstracted.** Do not reintroduce internal business figures, the
+  competitive-positioning argument, named customer connectors, or internal service names — even if Jim
+  mentions them in conversation. `VERIFY.md` lists what was removed and why.
 
 ---
 

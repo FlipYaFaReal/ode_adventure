@@ -61,7 +61,8 @@
     },
     "sources": {
       "primary": "Git history and the filesystem under C:\\Code, read 2026-08-24.",
-      "secondary": "jim-hart-source-project-portfolio.md and jim-hart-source-linkedin.md, both written by the author. Source of every tagline and of the career record."
+      "secondary": "jim-hart-source-project-portfolio.md and jim-hart-source-linkedin.md, both written by the author. Source of every tagline and of the career record.",
+      "work_machine": "AI_PORTFOLIO.md, compiled by the author on his work machine 2026-08-24 from source trees, dependency manifests and agent configuration there. Sole source for the professional and practice tiers. The document itself is held locally and is NOT committed to this public repository."
     },
     "published_to": "github.com/FlipYaFaReal/ode_adventure (public) as context/jim-hart/",
     "redaction_note": "Public copy. One employer-adjacent repository is withheld and one project cluster is described by its engineering facts only. Both are recorded in jim-hart-VERIFY.md rather than silently omitted."
@@ -967,6 +968,306 @@
           "tagline_provenance": "quoted",
           "notes": "The source exists only as a scanned magazine, so the work is OCR and page-image extraction. No code on disk yet.",
           "notes_provenance": "drafted"
+        }
+      ]
+    },
+    "professional": {
+      "definition": "AI work built for Jim's employer or its platform. On the work machine; not verifiable from this one.",
+      "count": 7,
+      "provenance": "quoted",
+      "abstraction_note": "Descriptions are abstracted for this public repository. Internal business figures, competitive positioning, named customer connectors and internal service topology are removed. See jim-hart-VERIFY.md.",
+      "items": [
+        {
+          "id": "lingo-integration-brief",
+          "name": "Lingo - Integration Brief",
+          "tagline": "An AI onboarding agent that walks a new tenant through a structured conversation and produces enough context to auto-generate their integration formulas, without a consultant on the call.",
+          "domain": "Applied AI product",
+          "status": "in flight",
+          "notes": "A Step framework over a subagent contract, with session management, a label cache, and a tool layer that reads live platform metadata. Ships with a documented mission constraining every technical decision: no fabrication, defer to the consultant, privacy on sample data. The clearest example in the portfolio of an agent built to a stated business case rather than as a demo, and the closest analogue to Ode's own work.",
+          "tech": [
+            "Python 3.11+",
+            "DSPy",
+            "FastAPI",
+            "Uvicorn",
+            "Azure Identity",
+            "Azure Blob Storage",
+            "Playwright",
+            "pytest",
+            "Docker"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        },
+        {
+          "id": "ai-formula-copilot",
+          "name": "AI Formula Copilot - product strategy and engineering plan",
+          "tagline": "Product and engineering work rather than code: a strategic brief on how agentic tooling changes who builds integrations, with the delivery plan to act on it.",
+          "domain": "Product strategy",
+          "status": "delivered",
+          "notes": "A 47-story, 7-epic engineering breakdown alongside an end-to-end technical trace of the mapping edit flow through the stack, written to ground the implementation rather than describe it abstractly. This is the item that most resembles a forward-deployed engagement: frame the problem, argue the position, then hand over something a team can execute.",
+          "tech": [
+            "Product strategy",
+            "architecture research",
+            "AI-assisted story generation"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        },
+        {
+          "id": "tier3-support-agent",
+          "name": "Tier 3 Support Agent",
+          "tagline": "A prompt-defined agent that investigates production bugs across a distributed microservice system and traces root cause through service and schema documentation.",
+          "domain": "Applied AI product",
+          "status": "built",
+          "notes": "The notable part is the loop: each investigation writes what it learned back into a living knowledge base, so the next one starts further along. The supporting documentation corpus was authored specifically as agent context rather than for human readers.",
+          "tech": [
+            ".NET",
+            "Azure Pipelines",
+            "prompt engineering",
+            "self-updating knowledge base"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        },
+        {
+          "id": "platform-engineering",
+          "name": "AI-Assisted Platform Engineering - the day job",
+          "tagline": "A large distributed platform worked agent-first, with the agent's context treated as maintained infrastructure.",
+          "domain": "Platform engineering",
+          "status": "ongoing",
+          "notes": "37 repositories carry a CLAUDE.md defining service-specific patterns, build commands and entry points; 13 carry committed .claude configuration. Root-level architecture documentation exists specifically so agents can navigate a system too large to hold in one head. Throughput pattern worth noting: eight or more parallel feature worktrees maintained simultaneously, a mode that only works when the agent carries context per branch. Individual repositories, services and customer connectors are deliberately not listed.",
+          "tech": [
+            ".NET",
+            "TypeScript",
+            "Temporal.io",
+            "Azure Functions",
+            "workflow DSL"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        },
+        {
+          "id": "milvus-contact-lookup",
+          "name": "Vector search - Milvus Contact Lookup",
+          "tagline": "A locally hosted vector database plus a service doing similarity search over contact data, exploring embedding-based record matching as an alternative to rule-based deduplication.",
+          "domain": "Applied AI research",
+          "status": "prototype",
+          "notes": "Diagnosis before construction: questioning whether the default matching primitive was the right one rather than optimising it.",
+          "tech": [
+            "Milvus",
+            "etcd",
+            "MinIO",
+            "Python",
+            "FastAPI",
+            "Pydantic"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        },
+        {
+          "id": "promptchain",
+          "name": "Omatic.PromptChain",
+          "tagline": "A YAML-defined prompt pipeline runner with a definition loader.",
+          "domain": "Applied AI tooling",
+          "status": "archived",
+          "notes": "Prompt chains as declarative configuration rather than code, an early move toward treating prompt composition as something to version and review.",
+          "tech": [
+            ".NET",
+            "YAML"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        },
+        {
+          "id": "candlekeep",
+          "name": "Candlekeep",
+          "tagline": "RDF and SPARQL ontology work building a semantic layer over platform data.",
+          "domain": "Knowledge representation",
+          "status": "archived",
+          "notes": "The on-disk counterpart to the ontology and knowledge-graph work named in Jim's current role.",
+          "tech": [
+            "RDF",
+            "SPARQL"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        }
+      ]
+    },
+    "practice": {
+      "definition": "Developer tooling and agent infrastructure Jim built for himself and his team. Work machine.",
+      "count": 6,
+      "provenance": "quoted",
+      "abstraction_note": "Descriptions are abstracted for this public repository. Internal business figures, competitive positioning, named customer connectors and internal service topology are removed. See jim-hart-VERIFY.md.",
+      "items": [
+        {
+          "id": "claude-hq",
+          "name": "Claude HQ",
+          "tagline": "An Electron desktop app for browsing, visualising and managing a Claude Code installation - sessions, projects, history, tasks, plans, commands, skills, plugins and settings.",
+          "domain": "Developer tooling",
+          "status": "built",
+          "notes": "Built against the actual on-disk structure rather than an idealised spec, with an IPC-as-API data layer, live file watching, Monaco-backed editors and usage visualisations. Design and implementation plan written before the build.",
+          "tech": [
+            "Electron",
+            "electron-vite",
+            "React",
+            "TypeScript",
+            "Zustand",
+            "TanStack Query",
+            "Monaco Editor",
+            "Radix UI",
+            "Tailwind",
+            "Recharts",
+            "dnd-kit",
+            "chokidar",
+            "Fuse.js"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        },
+        {
+          "id": "ai-agent-toolkit",
+          "name": "ai-agent-toolkit",
+          "tagline": "An internal Claude Code plugin marketplace for Jim's team, bundling shared slash commands and skills into a single installable plugin.",
+          "domain": "Team infrastructure",
+          "status": "in use",
+          "notes": "Nobody hand-copies files, and updates ship automatically as assets are added. The deliberate step from a personal workflow to shared team infrastructure, which is what a forward-deployed engagement has to leave behind.",
+          "tech": [
+            "Claude Code plugin marketplace",
+            "skills",
+            "slash commands",
+            "Markdown"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        },
+        {
+          "id": "team-process-toolkit",
+          "name": "Team Process Toolkit",
+          "tagline": "A CLI for engineering workflows - DORA metrics, release management, work item queries and team data sync - designed to be driven either from a terminal or by asking Claude in natural language.",
+          "domain": "Team infrastructure",
+          "status": "built",
+          "notes": "A local SQLite cache with a typed schema so the agent can query team history offline. Dual-surface by design: the same capability for a human and for an agent.",
+          "tech": [
+            "Node 20",
+            "TypeScript",
+            "Commander",
+            "Drizzle ORM",
+            "better-sqlite3",
+            "azure-devops-node-api",
+            "date-fns",
+            "Vitest",
+            "tsx"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        },
+        {
+          "id": "green-dragon",
+          "name": "The Green Dragon - Adventurer's Guild",
+          "tagline": "A desktop app that visualises AI coding agents as pixel-art adventurers living and working inside a fantasy guild hall, driven in real time by Claude Code hook events.",
+          "domain": "Developer tooling",
+          "status": "built",
+          "notes": "Notable for its engineering discipline as much as its whimsy: hexagonal architecture with domain, ports and services separated, an event-sourced session reducer, and unit tests on the core services. The spec is written for an AI coding agent as its primary reader.",
+          "tech": [
+            "Electron Forge",
+            "Vite",
+            "React",
+            "PixiJS",
+            "TypeScript",
+            "Zustand",
+            "Zod",
+            "Vitest",
+            "happy-dom",
+            "Testing Library"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        },
+        {
+          "id": "claude-environment",
+          "name": "Personal Claude Code environment",
+          "tagline": "The daily-driver agent setup the rest of this work runs on.",
+          "domain": "Agent infrastructure",
+          "status": "in use",
+          "notes": "11 custom skills, custom slash commands, session hooks, and 65 curated persistent memories across 15 project contexts - hard-won facts about API behaviour, platform quirks and tooling traps that stop the agent re-deriving them. Agent context maintained as an engineering artifact rather than as scratch.",
+          "tech": [
+            "Claude Code skills",
+            "hooks",
+            "slash commands",
+            "plugin marketplaces",
+            "file-based agent memory"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
+        },
+        {
+          "id": "navi-vault",
+          "name": "Navi - Personal Development Vault",
+          "tagline": "An Obsidian vault run as a personal AI assistant, with committed agent configuration.",
+          "domain": "Applied AI",
+          "status": "in use",
+          "notes": "PARA structure with daily check-ins, weekly reviews, a skills inventory and a people and meeting graph, all read and maintained by the agent. Distinct from the personal Navi REPL in the agents tier: same name, different project, different machine.",
+          "tech": [
+            "Obsidian",
+            "Markdown",
+            "Claude Code",
+            "PARA method"
+          ],
+          "provenance": "quoted",
+          "metrics": {
+            "provenance": "unverifiable",
+            "note": "On the work machine. Not scanned, so there are no commit or line counts and this item contributes nothing to meta.headline_stats."
+          },
+          "abstracted": true
         }
       ]
     }

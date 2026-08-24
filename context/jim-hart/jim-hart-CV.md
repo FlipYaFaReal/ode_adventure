@@ -16,7 +16,8 @@ Director of Engineering and back to senior IC by choice. Currently Senior Staff 
 systems — ontologies, knowledge graphs, vector databases and prompt chaining — after leading a five-team,
 16-engineer organisation through an on-premises to cloud SaaS transformation.
 
-Outside work: 34 personal projects, 1,389 commits and 164,418 lines across TypeScript, C#, JavaScript, SQL,
+AI work at Omatic spans shipped agents, product strategy and team tooling. Outside work: 34 personal
+projects, 1,389 commits and 164,418 lines across TypeScript, C#, JavaScript, SQL,
 Python and Vue, built with Claude Code and other AI tooling. Full record in `jim-hart-portfolio.json`.
 
 Provenance: career record `quoted` from LinkedIn; project figures `verified` from disk.
@@ -32,6 +33,19 @@ Provenance: career record `quoted` from LinkedIn; project figures `verified` fro
 
 - Applying AI, ontologies, knowledge graphs, vector databases and prompt chaining to build Omatic's future
   solutions.
+- **Lingo** — an AI onboarding agent that walks a new tenant through a structured conversation and produces
+  enough context to auto-generate their integration formulas, removing the consultant from the call.
+  Python, DSPy, FastAPI, Azure. Built to a documented mission: no fabrication, defer to the consultant,
+  privacy on sample data.
+- **Tier 3 Support Agent** — investigates production bugs across a distributed microservice system, traces
+  root cause through service and schema documentation, and writes findings back into a living knowledge
+  base so each investigation makes the next faster.
+- **AI Formula Copilot** — strategic brief on how agentic tooling changes who builds integrations, with a
+  47-story, 7-epic engineering breakdown and an end-to-end technical trace to ground delivery.
+- Platform worked agent-first: 37 repositories carrying agent instructions, 13 with committed
+  configuration, and architecture documentation authored for agent consumption.
+- **ai-agent-toolkit** — generalised a personal Claude Code workflow into an installable plugin marketplace
+  for the team.
 - Technical leadership on multi-year, cross-cutting projects.
 - Established and grew a new team to improve the company's systems-thinking and drive customer outcomes.
 
